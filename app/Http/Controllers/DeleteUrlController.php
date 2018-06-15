@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Revolution\Hatena\Bookmark\Bookmark;
+use App\Notifications\DeleteNotification;
 
 class DeleteUrlController extends Controller
 {
@@ -26,9 +27,12 @@ class DeleteUrlController extends Controller
         ];
 
         $url = urldecode($request->input('url'));
-        //        info($url);
 
         $status = $bookmark->setAuth($config)->delete($url);
+
+        if ($status === 204) {
+            $request->user()->notify(new DeleteNotification($url, $url));
+        }
 
         return back();
     }
