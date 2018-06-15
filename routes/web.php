@@ -21,6 +21,7 @@ Route::namespace('Auth')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('delete', 'DeleteController')->name('delete');
+    Route::get('delete-url', 'DeleteUrlController')->name('delete-url');
     Route::get('config', 'ConfigController@edit')->name('config.edit');
     Route::post('config', 'ConfigController@update')->name('config.update');
 });

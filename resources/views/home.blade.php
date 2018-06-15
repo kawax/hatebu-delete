@@ -22,6 +22,8 @@
                                 <a href="{{ $item->link[0]->attributes()['href'] ?? '' }}" target="_blank">
                                     {{ $item->title }}
                                 </a>
+                                <a href="{{ route('delete-url', ['url' => urlencode($item->link[0]->attributes()['href'])]) }}"
+                                   class="btn btn-outline-dark btn-sm ml-2">個別削除</a>
                             </li>
                         @endforeach
                     </ul>

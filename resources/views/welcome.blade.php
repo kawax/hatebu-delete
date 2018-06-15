@@ -36,6 +36,10 @@
                             で20件分削除。
                             {{ config('hatena.delete_days') }}日以内のブックマークは除くので毎日のブックマークが多すぎる場合は削除されない。そういう人は使わない想定。
                         </p>
+                        <p>
+                            <button class="btn btn-outline-dark btn-sm">個別削除</button>
+                            なら関係なく即削除。
+                        </p>
 
                         <h3 class="border-bottom">自動削除</h3>
                         <p>
