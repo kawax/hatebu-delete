@@ -57,6 +57,9 @@ class ConfigForm extends ZendForm
                 'value' => '保存',
                 'class' => 'btn btn-primary',
             ],
+            'options'    => [
+                'element-class' => 'col-sm-10 offset-sm-2',
+            ],
         ]);
     }
 }
