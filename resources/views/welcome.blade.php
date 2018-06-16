@@ -29,6 +29,12 @@
                         <p>
                             削除まで行うのでscopeは全部（read_public, write_public, read_private, write_private）
                         </p>
+                        <p>
+                            許可するのが心配なら自分で動かそう。
+                            <a href="https://github.com/kawax/hatebu-delete"
+                               target="_blank"
+                               rel="noopener">GitHub</a>
+                        </p>
 
                         <h3 class="border-bottom">手動削除</h3>
                         <p>
