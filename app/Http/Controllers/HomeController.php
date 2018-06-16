@@ -17,9 +17,7 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $feed = cache()->remember('feed.' . $request->user()->id, 10, function () {
-            return FeedJob::dispatchNow(request()->user());
-        });
+        $feed = FeedJob::dispatchNow($request->user());
 
         //        dump($feed);
 
