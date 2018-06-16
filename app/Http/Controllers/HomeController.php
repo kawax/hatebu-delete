@@ -17,6 +17,7 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
+        //SimpleXMLElementなのでキャッシュ不可
         $feed = FeedJob::dispatchNow($request->user());
 
         //        dump($feed);

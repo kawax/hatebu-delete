@@ -16,27 +16,7 @@
                         {{ $feed->title }}（最近の20件）
                     </div>
                     <ul class="list-group list-group-flush">
-                        @foreach($feed->entry as $item)
-                            <li class="list-group-item">
-                                {{ Carbon\Carbon::parse($item->issued)->toDateTimeString() }}
-                                <a href="{{ $item->link[0]->attributes()['href'] ?? '' }}"
-                                   target="_blank"
-                                   rel="noreferrer noopener">
-                                    {{ $item->title }}
-                                </a>
-
-                                @unless(empty($item->summary))
-                                    <span class="text-muted">『{{ $item->summary }}』</span>
-                                @endunless
-
-                                <form action="{{ route('delete-url') }}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <input type="hidden" name="url" value="{{ $item->link[0]->attributes()['href'] }}">
-                                    <input class="btn btn-outline-dark btn-sm" type="submit" value="個別削除">
-                                </form>
-                            </li>
-                        @endforeach
+                        @each('home.entry', $feed->entry, 'item')
                     </ul>
                 </div>
             </div>

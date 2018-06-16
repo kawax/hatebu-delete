@@ -6,7 +6,8 @@
         <ul class="list-group list-group-flush">
             @foreach($notifications as $notification)
                 <li class="list-group-item">
-                    {{ $notification->created_at }}
+                    <time>{{ $notification->created_at }}</time>
+
                     @switch(class_basename($notification->type))
                         @case('DeleteNotification')
                         <a href="{{ data_get($notification->data, 'url') }}" target="_blank" rel="noreferrer noopener">
@@ -18,7 +19,6 @@
                         ...
                         @break
                     @endswitch
-
                 </li>
             @endforeach
         </ul>
