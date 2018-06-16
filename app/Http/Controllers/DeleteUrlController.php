@@ -26,7 +26,8 @@ class DeleteUrlController extends Controller
             'token_secret'    => $request->user()->token_secret,
         ];
 
-        $url = urldecode($request->input('url'));
+        $url = $request->input('url');
+        //        info($url);
 
         $status = $bookmark->setAuth($config)->delete($url);
 

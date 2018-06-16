@@ -29,7 +29,7 @@ class HomeController extends Controller
     {
         $feed = FeedJob::dispatchNow($request->user());
 
-//        dump($feed);
+        //        dump($feed);
 
         $request->user()
                 ->readNotifications()

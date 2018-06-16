@@ -19,35 +19,30 @@
                         @foreach($feed->entry as $item)
                             <li class="list-group-item">
                                 {{ Carbon\Carbon::parse($item->issued)->toDateTimeString() }}
-                                <a href="{{ $item->link[0]->attributes()['href'] ?? '' }}" target="_blank">
+                                <a href="{{ $item->link[0]->attributes()['href'] ?? '' }}"
+                                   target="_blank"
+                                   rel="noreferrer noopener">
                                     {{ $item->title }}
                                 </a>
-                                <a href="{{ route('delete-url', ['url' => urlencode($item->link[0]->attributes()['href'])]) }}"
-                                   class="btn btn-outline-dark btn-sm ml-2">個別削除</a>
+
+                                @unless(empty($item->summary))
+                                    <span class="text-muted">『{{ $item->summary }}』</span>
+                                @endunless
+
+                                <form action="{{ route('delete-url') }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="hidden" name="url" value="{{ $item->link[0]->attributes()['href'] }}">
+                                    <input class="btn btn-outline-dark btn-sm" type="submit" value="個別削除">
+                                </form>
                             </li>
                         @endforeach
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card bg-primary">
-                    <div class="card-header text-white">
-                        通知
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        @foreach($notifications as $notification)
-                            <li class="list-group-item">
-                                {{ $notification->created_at }}
-                                <a href="{{ data_get($notification->data, 'url') }}" target="_blank">
-                                    {{ data_get($notification->data, 'title') }}
-                                </a>
-                                を削除。
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
+            @include('home.notifications')
+
         </div>
     </div>
 @endsection
