@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "747d800bd6b9066a1f2405092242d6a6",
+    "content-hash": "0f1aafbd5902d5397b1bdfda2fb2b3b9",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3451,6 +3451,66 @@
             "time": "2017-11-27T11:13:29+00:00"
         },
         {
+            "name": "tomschlick/laravel-http2-server-push",
+            "version": "dev-patch",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-http2-server-push.git",
+                "reference": "7ad38a18329e54034f395da21df49417913ca1d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-http2-server-push/zipball/7ad38a18329e54034f395da21df49417913ca1d7",
+                "reference": "7ad38a18329e54034f395da21df49417913ca1d7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+                "illuminate/http": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.1",
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomSchlick\\ServerPush\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TomSchlick\\ServerPush\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "TomSchlick\\ServerPush\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Schlick",
+                    "email": "tom@tomschlick.com"
+                }
+            ],
+            "description": "A middleware package for Laravel 5 to enable server push for your script, style, and image assets.",
+            "support": {
+                "source": "https://github.com/kawax/laravel-http2-server-push/tree/patch"
+            },
+            "time": "2018-05-27T03:58:13+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -6048,7 +6108,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "tomschlick/laravel-http2-server-push": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
