@@ -36,17 +36,18 @@ class DeleteCommand extends Command
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @param User $user
+     *
+     * @return void
      */
-    public function handle()
+    public function handle(User $user)
     {
-        $users = User::query()
-                     ->where('key', config('hatena.key'))
-                     ->where('fails', '<=', 10)
-                     ->get();
+        $users = $user->where('key', config('hatena.key'))
+                      ->where('fails', '<=', 10)
+                      ->get();
 
         foreach ($users as $user) {
-            info(class_basename(DeleteCommand::class) . ' : ' . $user->name);
+            info(class_basename(self::class) . ' : ' . $user->name);
             DeleteJob::dispatch($user);
         }
     }

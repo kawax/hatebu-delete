@@ -17,11 +17,16 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        //SimpleXMLElementなのでキャッシュ不可
+        /**
+         * SimpleXMLElementなのでキャッシュ不可
+         *
+         * @var \SimpleXMLElement $feed
+         */
         $feed = FeedJob::dispatchNow($request->user());
 
         //        dump($feed);
 
+        //古い通知は削除
         $request->user()
                 ->readNotifications()
                 ->whereDate('created_at', '<', now()->subDays(config('hatena.delete_days')))

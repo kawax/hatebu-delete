@@ -27,7 +27,6 @@ class DeleteUrlController extends Controller
         ];
 
         $url = $request->input('url');
-        //        info($url);
 
         $status = $bookmark->setAuth($config)->delete($url);
 
