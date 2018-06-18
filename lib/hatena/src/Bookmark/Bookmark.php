@@ -9,6 +9,8 @@ class Bookmark
     use HatenaClient;
 
     /**
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
+     *
      * @param string $endpoint
      *
      * @return string
@@ -21,6 +23,8 @@ class Bookmark
     }
 
     /**
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/rest/bookmark#delete_my_bookmark
+     *
      * @param string $url
      * @param string $endpoint
      *

@@ -12,7 +12,7 @@ class Entry
     use HatenaClient;
 
     /**
-     * http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getinfo.
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getinfo
      *
      * @param string $url
      * @param string $endpoint ノーマル版を使うなら"http://b.hatena.ne.jp/entry/json/"
@@ -35,7 +35,7 @@ class Entry
     }
 
     /**
-     * http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getcount.
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getcount
      *
      * @param string $url
      * @param string $endpoint
@@ -76,7 +76,7 @@ class Entry
     }
 
     /**
-     * http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getcount.
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getcount
      *
      * @param string $url
      * @param string $endpoint
