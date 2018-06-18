@@ -29,7 +29,7 @@ class HomeController extends Controller
         //古い通知は削除
         $request->user()
                 ->readNotifications()
-                ->whereDate('created_at', '<', now()->subDays(config('hatena.delete_days')))
+                ->where('created_at', '<', now()->subDays(config('hatena.delete_days')))
                 ->delete();
 
         $notifications = $request->user()->notifications;
