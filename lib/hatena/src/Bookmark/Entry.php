@@ -19,7 +19,7 @@ class Entry
      *
      * @return string
      */
-    public function info($url, $endpoint = 'http://b.hatena.ne.jp/entry/jsonlite/')
+    public function info(string $url, string $endpoint = 'http://b.hatena.ne.jp/entry/jsonlite/'): string
     {
         $res = $this->request($endpoint, [
             'query' => ['url' => $url],
@@ -40,9 +40,9 @@ class Entry
      * @param string $url
      * @param string $endpoint
      *
-     * @return bool|string
+     * @return string
      */
-    public function count($url, $endpoint = 'http://api.b.st-hatena.com/entry.count')
+    public function count(string $url, string $endpoint = 'http://api.b.st-hatena.com/entry.count'): string
     {
         $res = $this->request($endpoint, [
             'query' => ['url' => $url],
@@ -57,7 +57,7 @@ class Entry
      *
      * @return string
      */
-    public function counts($urls, $endpoint = 'http://api.b.st-hatena.com/entry.counts')
+    public function counts(array $urls, string $endpoint = 'http://api.b.st-hatena.com/entry.counts'): string
     {
         //一度に指定できるurlは50まで
         if (count($urls) > 50) {
@@ -81,9 +81,9 @@ class Entry
      * @param string $url
      * @param string $endpoint
      *
-     * @return bool|string
+     * @return string
      */
-    public function totalCount($url, $endpoint = 'http://api.b.st-hatena.com/entry.total_count')
+    public function totalCount(string $url, string $endpoint = 'http://api.b.st-hatena.com/entry.total_count'): string
     {
         $res = $this->request($endpoint, [
             'query' => ['url' => $url],
