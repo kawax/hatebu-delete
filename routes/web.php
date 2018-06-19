@@ -23,7 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::get('home', 'HomeController')->name('home');
 
     Route::get('delete', 'DeleteController')->name('delete');
-    Route::delete('delete-url', 'DeleteUrlController')->name('delete-url');
+    Route::delete('delete-one', 'DeleteOneController')->name('delete-one');
 
     Route::get('config', 'ConfigController@edit')->name('config.edit');
     Route::post('config', 'ConfigController@update')->name('config.update');

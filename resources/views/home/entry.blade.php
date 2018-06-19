@@ -16,7 +16,7 @@
         <span class="text-muted">『{{ $item->summary }}』</span>
     @endunless
 
-    <form action="{{ route('delete-url') }}" method="POST">
+    <form action="{{ route('delete-one') }}" method="POST">
         @csrf
         @method('DELETE')
         <input type="hidden" name="url" value="{{ $url }}">
