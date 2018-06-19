@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Jobs\DeleteOneJob;
 
-
 class DeleteOneController extends Controller
 {
     /**

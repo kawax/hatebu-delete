@@ -26,17 +26,6 @@ class HomeController extends Controller
 
         //        dump($feed);
 
-        //古い通知は削除
-        $request->user()
-                ->readNotifications()
-                ->where('created_at', '<', now()->subDays(config('hatena.delete_days')))
-                ->delete();
-
-        $notifications = $request->user()->notifications;
-        $notifications->markAsRead();
-
-        $notifications = $notifications->take(20);
-
-        return view('home')->with(compact('feed', 'notifications'));
+        return view('home')->with(compact('feed'));
     }
 }
