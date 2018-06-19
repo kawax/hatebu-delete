@@ -26,6 +26,8 @@ class HomeController extends Controller
 
         //        dump($feed);
 
+        //notificationsはAppServiceProviderのViewComposerで。
+
         return view('home')->with(compact('feed'));
     }
 }
