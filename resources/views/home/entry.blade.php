@@ -1,6 +1,6 @@
 <li class="list-group-item">
     @php
-        $url = $item->link[0]->attributes()['href'] ?? '';
+        $url = data_get(head($item->link), 'href', '');
     @endphp
 
     <time>{{ Carbon\Carbon::parse($item->issued)->toDateTimeString() }}</time>
