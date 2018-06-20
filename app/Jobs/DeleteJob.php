@@ -46,7 +46,7 @@ class DeleteJob implements ShouldQueue
         $feed = FeedJob::dispatchNow($this->user);
 
         foreach ($feed->entry as $item) {
-            $url = (string)data_get(head($item->link), 'href');
+            $url = data_get(head($item->link), 'href');
 
             if (empty($url)) {
                 continue;
