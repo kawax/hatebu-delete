@@ -57,20 +57,21 @@ class DeleteJob implements ShouldQueue
 
         foreach ($feed->entry as $item) {
             $url = (string)$item->link[0]->attributes()['href'] ?? '';
+
             if (empty($url)) {
                 continue;
             }
 
-            $title = (string)$item->title;
-
             $date = Carbon::parse((string)$item->issued);
 
-            if ($date->lt(now()->subDays(config('hatena.delete_days')))) {
-                $status = $bookmark->delete($url);
+            if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
+                continue;
+            }
 
-                if ($status === 204) {
-                    $this->user->notify(new DeleteNotification($title, $url));
-                }
+            $status = $bookmark->delete($url);
+
+            if ($status === 204) {
+                $this->user->notify(new DeleteNotification((string)$item->title, $url));
             }
         }
 
