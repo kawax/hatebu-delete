@@ -58,6 +58,7 @@ class DeleteJob implements ShouldQueue
                 continue;
             }
 
+            //FeedJobで認証情報はセット済なのでここでは不要
             $status = app(Bookmark::class)->delete($url);
 
             if ($status === 204) {
