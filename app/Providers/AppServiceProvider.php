@@ -6,8 +6,19 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\View;
 
+use Revolution\Hatena\Bookmark\Bookmark;
+
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * 登録する必要のある全コンテナシングルトン
+     *
+     * @var array
+     */
+    public $singletons = [
+        Bookmark::class => Bookmark::class,
+    ];
+
     /**
      * Bootstrap any application services.
      *

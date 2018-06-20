@@ -39,21 +39,11 @@ class DeleteJob implements ShouldQueue
     /**
      * Execute the job.
      *
-     * @param Bookmark $bookmark
-     *
      * @return void
      */
-    public function handle(Bookmark $bookmark)
+    public function handle()
     {
-        $config = [
-            'consumer_key'    => config('services.hatena.client_id'),
-            'consumer_secret' => config('services.hatena.client_secret'),
-            'token'           => $this->user->access_token,
-            'token_secret'    => $this->user->token_secret,
-        ];
-
-        $feed = $bookmark->setAuth($config)->feed();
-        $feed = simplexml_load_string($feed);
+        $feed = FeedJob::dispatchNow($this->user);
 
         foreach ($feed->entry as $item) {
             $url = (string)$item->link[0]->attributes()['href'] ?? '';
@@ -68,7 +58,7 @@ class DeleteJob implements ShouldQueue
                 continue;
             }
 
-            $status = $bookmark->delete($url);
+            $status = app(Bookmark::class)->delete($url);
 
             if ($status === 204) {
                 $this->user->notify(new DeleteNotification((string)$item->title, $url));

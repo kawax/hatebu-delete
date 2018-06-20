@@ -35,11 +35,9 @@ class FeedJob implements ShouldQueue
     /**
      * Execute the job.
      *
-     * @param Bookmark $bookmark
-     *
      * @return \SimpleXMLElement
      */
-    public function handle(Bookmark $bookmark)
+    public function handle()
     {
         $config = [
             'consumer_key'    => config('services.hatena.client_id'),
@@ -48,7 +46,7 @@ class FeedJob implements ShouldQueue
             'token_secret'    => $this->user->token_secret,
         ];
 
-        $feed = $bookmark->setAuth($config)->feed();
+        $feed = app(Bookmark::class)->setAuth($config)->feed();
         $feed = simplexml_load_string($feed);
 
         return $feed;
