@@ -59,7 +59,7 @@ class DeleteOneJob implements ShouldQueue
 
         $status = $bookmark->setAuth($config)->delete($this->url);
 
-        if ($status === 204) {
+        if ($status === Bookmark::NO_CONTENT) {
             $this->user->notify(new DeleteNotification($this->url, $this->url));
         }
     }

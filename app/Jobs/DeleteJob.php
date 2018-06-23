@@ -74,7 +74,7 @@ class DeleteJob implements ShouldQueue
         //FeedJobで認証情報はセット済なのでここでは不要
         $status = app(Bookmark::class)->delete($url);
 
-        if ($status === 204) {
+        if ($status === Bookmark::NO_CONTENT) {
             $this->user->notify(new DeleteNotification((string)$item->title, $url));
         }
     }

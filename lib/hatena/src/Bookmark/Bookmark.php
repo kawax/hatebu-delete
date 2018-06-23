@@ -8,6 +8,8 @@ class Bookmark
 {
     use HatenaClient;
 
+    const NO_CONTENT = 204;
+
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
      *
