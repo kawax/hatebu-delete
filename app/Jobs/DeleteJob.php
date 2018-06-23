@@ -46,29 +46,37 @@ class DeleteJob implements ShouldQueue
         $feed = FeedJob::dispatchNow($this->user);
 
         foreach ($feed->entry as $item) {
-            $url = data_get(head($item->link), 'href');
-
-            if (empty($url)) {
-                continue;
-            }
-
-            $date = Carbon::parse((string)$item->issued);
-
-            if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
-                continue;
-            }
-
-            //FeedJobで認証情報はセット済なのでここでは不要
-            $status = app(Bookmark::class)->delete($url);
-
-            if ($status === 204) {
-                $this->user->notify(new DeleteNotification((string)$item->title, $url));
-            }
+            $this->delete($item);
         }
 
         $this->user->fill([
             'fails' => 0,
         ])->save();
+    }
+
+    /**
+     * @param mixed $item
+     */
+    private function delete($item)
+    {
+        $url = data_get(head($item->link), 'href');
+
+        if (empty($url)) {
+            return;
+        }
+
+        $date = Carbon::parse((string)$item->issued);
+
+        if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
+            return;
+        }
+
+        //FeedJobで認証情報はセット済なのでここでは不要
+        $status = app(Bookmark::class)->delete($url);
+
+        if ($status === 204) {
+            $this->user->notify(new DeleteNotification((string)$item->title, $url));
+        }
     }
 
     /**
