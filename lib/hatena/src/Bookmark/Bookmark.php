@@ -13,12 +13,14 @@ class Bookmark
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
      *
-     * @param string $endpoint
+     * @param string $user
      *
      * @return string
      */
-    public function feed(string $endpoint = 'https://b.hatena.ne.jp/atom/feed'): string
+    public function feed(string $user): string
     {
+        $endpoint = 'http://b.hatena.ne.jp/' . $user . '/rss';
+
         $res = $this->request($endpoint);
 
         return (string)$res->getBody();

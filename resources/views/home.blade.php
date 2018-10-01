@@ -13,10 +13,10 @@
 
                 <div class="card bg-primary my-2">
                     <div class="card-header text-white">
-                        {{ $feed->title }}（最近の20件）
+                        {{ $feed->channel->title }}（最近の20件）
                     </div>
                     <ul class="list-group list-group-flush">
-                        @each('home.entry', $feed->entry, 'item')
+                        @each('home.entry', $feed->item, 'item')
                     </ul>
                 </div>
             </div>

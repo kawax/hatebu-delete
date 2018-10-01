@@ -1,9 +1,9 @@
 <li class="list-group-item">
     @php
-        $url = data_get(head($item->link), 'href', '');
+        $url = $item->link;
     @endphp
 
-    <time>{{ Carbon\Carbon::parse($item->issued)->toDateTimeString() }}</time>
+    <time>{{ Carbon\Carbon::parse($item->children('http://purl.org/dc/elements/1.1/')->date)->toDateTimeString() }}</time>
 
     <a href="{{ $url }}"
        class="font-weight-bold"
@@ -12,8 +12,8 @@
         {{ $item->title }}
     </a>
 
-    @unless(empty($item->summary))
-        <span class="text-muted">『{{ $item->summary }}』</span>
+    @unless(empty($item->description))
+        <span class="text-muted">『{{ $item->description }}』</span>
     @endunless
 
     <form action="{{ route('delete-one') }}" method="POST">

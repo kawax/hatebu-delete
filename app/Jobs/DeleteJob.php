@@ -45,7 +45,7 @@ class DeleteJob implements ShouldQueue
     {
         $feed = FeedJob::dispatchNow($this->user);
 
-        foreach ($feed->entry as $item) {
+        foreach ($feed->item as $item) {
             $this->delete($item);
         }
 
@@ -59,13 +59,13 @@ class DeleteJob implements ShouldQueue
      */
     private function delete($item)
     {
-        $url = data_get(head($item->link), 'href');
+        $url = $item->link;
 
         if (empty($url)) {
             return;
         }
 
-        $date = Carbon::parse((string)$item->issued);
+        $date = Carbon::parse((string)$item->children('http://purl.org/dc/elements/1.1/')->date);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;

@@ -14,6 +14,13 @@
                                rel="noreferrer noopener">ブックマークの全削除が行えない不具合が発生しています -
                                 はてなブックマーク開発ブログ</a>
                         </p>
+
+                        <p>
+                            AtomAPIが終了したので非公開ブックマークでは使えない。
+                            <a href="http://bookmark.hatenastaff.com/entry/2018/09/19/181818" target="_blank"
+                               rel="noreferrer noopener">はてなブックマークAtom
+                                APIのサポートを終了します - はてなブックマーク開発ブログ</a>
+                        </p>
                     </div>
                 </div>
             </div>

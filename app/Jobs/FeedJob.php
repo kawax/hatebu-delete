@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 
 use App\Model\User;
 use Revolution\Hatena\Bookmark\Bookmark;
+use Revolution\Hatena\Bookmark\My;
 
 class FeedJob implements ShouldQueue
 {
@@ -46,7 +47,10 @@ class FeedJob implements ShouldQueue
             'token_secret'    => $this->user->token_secret,
         ];
 
-        $feed = app(Bookmark::class)->setAuth($config)->feed();
+        $my = app(My::class)->setAuth($config)->my();
+        $my = json_decode($my);
+
+        $feed = app(Bookmark::class)->setAuth($config)->feed($my->name);
         $feed = simplexml_load_string($feed);
 
         return $feed;
