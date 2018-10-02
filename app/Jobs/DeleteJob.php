@@ -59,7 +59,7 @@ class DeleteJob implements ShouldQueue
      */
     private function delete($item)
     {
-        $url = $item->link;
+        $url = (string)$item->link;
 
         if (empty($url)) {
             return;

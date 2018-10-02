@@ -65,6 +65,11 @@
 
                         <h3 class="border-bottom">通知</h3>
                         <p>削除されたURLは通知に一時的に残る。これも{{ config('hatena.delete_days') }}日後には削除される。</p>
+
+                        <h3 class="border-bottom">連携解除</h3>
+                        <p><a href="https://www.hatena.ne.jp/my/config/auth/provider"
+                              target="_blank"
+                              rel="noreferrer noopener">はてな側の設定画面</a>で解除。</p>
                     </div>
                 </div>
             </div>
