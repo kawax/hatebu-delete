@@ -11,6 +11,9 @@ class Bookmark
     const NO_CONTENT = 204;
 
     /**
+     * Atom APIが使えなくなるのでRSSから取得。
+     * 非公開だと取得できないし、キャッシュされてるので更新が遅い。
+     *
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
      *
      * @param string $user
@@ -21,6 +24,22 @@ class Bookmark
     {
         $endpoint = 'http://b.hatena.ne.jp/' . $user . '/rss';
 
+        $res = $this->request($endpoint);
+
+        return (string)$res->getBody();
+    }
+
+    /**
+     * Atomも一応まだ残しておく
+     *
+     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
+     *
+     * @param string $endpoint
+     *
+     * @return string
+     */
+    public function atom(string $endpoint = 'https://b.hatena.ne.jp/atom/feed'): string
+    {
         $res = $this->request($endpoint);
 
         return (string)$res->getBody();
