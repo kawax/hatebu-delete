@@ -30,22 +30,6 @@ class Bookmark
     }
 
     /**
-     * Atomも一応まだ残しておく
-     *
-     * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
-     *
-     * @param string $endpoint
-     *
-     * @return string
-     */
-    public function atom(string $endpoint = 'https://b.hatena.ne.jp/atom/feed'): string
-    {
-        $res = $this->request($endpoint);
-
-        return (string)$res->getBody();
-    }
-
-    /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/rest/bookmark#delete_my_bookmark
      *
      * @param string $url
