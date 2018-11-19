@@ -14,16 +14,23 @@
                                rel="noreferrer noopener">ブックマークの全削除が行えない不具合が発生しています -
                                 はてなブックマーク開発ブログ</a>
                         </p>
+                    </div>
+                </div>
 
+                <div class="card border-primary mt-3">
+                    <div class="card-body">
+                        <h2>お知らせ</h2>
+                        <p>意外とユーザーがいるのでお知らせ欄。</p>
+                        <hr>
                         <p>
-                            AtomAPIが終了したので非公開ブックマークでは使えない。
+                            AtomAPIが終了したので非公開ブックマークでは使えなくなった。
                             <a href="http://bookmark.hatenastaff.com/entry/2018/09/19/181818" target="_blank"
                                rel="noreferrer noopener">はてなブックマークAtom
                                 APIのサポートを終了します - はてなブックマーク開発ブログ</a>
                         </p>
-
+                        <hr>
                         <p>
-                            AtomAPI終了後はfeedから取得してるけどはてな側がなにかおかしい。古いブックマークが出てくる場合ははてな側の不具合なので無視。
+                            AtomAPI終了後はRSSから取得してるけどはてな側がなにかおかしい。削除済の古いブックマークが出てくる場合ははてな側の不具合なので無視。
                         </p>
                     </div>
                 </div>
@@ -41,7 +48,7 @@
                             削除まで行うのでscopeは全部（read_public, write_public, read_private, write_private）
                         </p>
                         <p>
-                            許可するのが心配なら自分で動かそう。
+                            許可するのが心配なら自分で動かそう。（サポートは一切なし）
                             <a href="https://github.com/kawax/hatebu-delete"
                                target="_blank"
                                rel="noopener">GitHub</a>
