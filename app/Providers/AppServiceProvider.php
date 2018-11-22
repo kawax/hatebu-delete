@@ -4,8 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-use Illuminate\Support\Facades\View;
-
 use Revolution\Hatena\Bookmark\Bookmark;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('home.notifications', function ($view) {
+        view()->composer('home.notifications', function ($view) {
             //古い通知は削除
             request()->user()
                      ->readNotifications()
