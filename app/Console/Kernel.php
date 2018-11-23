@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command(Commands\DeleteCommand::class)
-                 ->dailyAt('05:05');
+                 ->dailyAt('15:05');
     }
 
     /**
