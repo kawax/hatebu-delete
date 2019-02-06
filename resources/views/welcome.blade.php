@@ -35,7 +35,8 @@
                         <hr>
                         <p>
                             自動削除の特典キーはユーザーが入れ替わったら変更するけど今の状態では頻繁に変えることはないので一ヶ月だけ申し込めば当分使える。
-                            <a href="https://www.pixiv.net/fanbox/creator/762638/post/79560" target="_blank">特典キー</a>
+                            <a href="https://www.pixiv.net/fanbox/creator/762638/post/79560" target="_blank"
+                               rel="noreferrer noopener">特典キー</a>
                         </p>
                     </div>
                 </div>
