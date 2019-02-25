@@ -5,22 +5,12 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use Socialite;
+use Laravel\Socialite\Facades\Socialite;
 
 use App\Model\User;
 
 class LoginController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-//        $this->middleware('guest')->except('login', 'logout');
-    }
-
     public function login()
     {
         return Socialite::driver('hatena')->redirect();
@@ -40,14 +30,12 @@ class LoginController extends Controller
         /**
          * @var \App\Model\User $loginUser
          */
-        $loginUser = User::updateOrCreate(
-            [
-                'name' => $user->id,
-            ],
-            [
-                'access_token' => $user->token,
-                'token_secret' => $user->tokenSecret,
-            ]);
+        $loginUser = User::updateOrCreate([
+            'name' => $user->id,
+        ], [
+            'access_token' => $user->token,
+            'token_secret' => $user->tokenSecret,
+        ]);
 
         auth()->login($loginUser, true);
 

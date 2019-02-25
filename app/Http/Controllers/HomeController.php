@@ -24,8 +24,6 @@ class HomeController extends Controller
          */
         $feed = FeedJob::dispatchNow($request->user());
 
-        //dump($feed);
-
         //notificationsはAppServiceProviderのViewComposerで。
 
         return view('home')->with(compact('feed'));

@@ -68,7 +68,7 @@
                         </p>
                         <p>
                             <button class="btn btn-outline-dark btn-sm">個別削除</button>
-                            なら関係なく即削除。
+                            なら関係なく即削除。ブクマ整理にちょうどいい。
                         </p>
 
                         <h3 class="border-bottom">自動削除</h3>
