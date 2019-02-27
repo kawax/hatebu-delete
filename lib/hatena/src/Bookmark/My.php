@@ -14,6 +14,8 @@ class My
      * @param string $endpoint
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function my(string $endpoint = 'http://api.b.hatena.ne.jp/1/my'): string
     {

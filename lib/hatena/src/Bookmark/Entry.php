@@ -18,6 +18,8 @@ class Entry
      * @param string $endpoint ノーマル版を使うなら"http://b.hatena.ne.jp/entry/json/"
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function info(string $url, string $endpoint = 'http://b.hatena.ne.jp/entry/jsonlite/'): string
     {
@@ -41,6 +43,8 @@ class Entry
      * @param string $endpoint
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function count(string $url, string $endpoint = 'http://api.b.st-hatena.com/entry.count'): string
     {
@@ -56,6 +60,8 @@ class Entry
      * @param string $endpoint
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function counts(array $urls, string $endpoint = 'http://api.b.st-hatena.com/entry.counts'): string
     {
@@ -82,6 +88,8 @@ class Entry
      * @param string $endpoint
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function totalCount(string $url, string $endpoint = 'http://api.b.st-hatena.com/entry.total_count'): string
     {

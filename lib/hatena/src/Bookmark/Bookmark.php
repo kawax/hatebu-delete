@@ -19,6 +19,8 @@ class Bookmark
      * @param string $user
      *
      * @return string
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function feed(string $user): string
     {
@@ -36,6 +38,8 @@ class Bookmark
      * @param string $endpoint
      *
      * @return int
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function delete(string $url, string $endpoint = 'http://api.b.hatena.ne.jp/1/my/bookmark'): int
     {

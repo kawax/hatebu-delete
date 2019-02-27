@@ -61,6 +61,8 @@ trait HatenaClient
      * @param string $method
      *
      * @return ResponseInterface
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function request($url, array $options = [], $method = 'GET')
     {
