@@ -1659,16 +1659,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "1d470d95c7506eb391c48bc3cda6be5ded3e593f"
+                "reference": "0bb624e7e52c1858240c783a5418b8dcc5a7c2d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/1d470d95c7506eb391c48bc3cda6be5ded3e593f",
-                "reference": "1d470d95c7506eb391c48bc3cda6be5ded3e593f",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/0bb624e7e52c1858240c783a5418b8dcc5a7c2d1",
+                "reference": "0bb624e7e52c1858240c783a5418b8dcc5a7c2d1",
                 "shasum": ""
             },
             "require": {
@@ -1719,7 +1719,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2019-03-12T16:42:59+00:00"
+            "time": "2019-03-15T12:39:01+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -4518,16 +4518,16 @@
         },
         {
             "name": "zendframework/zend-hydrator",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-hydrator.git",
-                "reference": "bdc189f3bc635b497552d3bbce4d55e0d16db835"
+                "reference": "f9987bfa25a89d6191e1dbb0413b3c35613f0271"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/bdc189f3bc635b497552d3bbce4d55e0d16db835",
-                "reference": "bdc189f3bc635b497552d3bbce4d55e0d16db835",
+                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/f9987bfa25a89d6191e1dbb0413b3c35613f0271",
+                "reference": "f9987bfa25a89d6191e1dbb0413b3c35613f0271",
                 "shasum": ""
             },
             "require": {
@@ -4576,7 +4576,7 @@
                 "hydrator",
                 "zf"
             ],
-            "time": "2019-01-07T19:27:11+00:00"
+            "time": "2019-03-15T14:12:03+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
