@@ -971,16 +971,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
                 "shasum": ""
             },
             "require": {
@@ -1024,7 +1024,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-12-04T22:38:24+00:00"
+            "time": "2019-05-16T22:02:54+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -2783,16 +2783,16 @@
         },
         {
             "name": "revolution/laravel-zend-form",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-zend-form.git",
-                "reference": "7c3a1dfdbbf171cd9f010f7289141a6304d2b448"
+                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/7c3a1dfdbbf171cd9f010f7289141a6304d2b448",
-                "reference": "7c3a1dfdbbf171cd9f010f7289141a6304d2b448",
+                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
+                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
                 "shasum": ""
             },
             "require": {
@@ -2839,7 +2839,7 @@
                 "laravel",
                 "zend-form"
             ],
-            "time": "2019-04-09T06:45:59+00:00"
+            "time": "2019-05-22T09:39:27+00:00"
         },
         {
             "name": "seld/jsonlint",
