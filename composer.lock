@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "409f5a38523437185beeca0b199f9abb",
+    "content-hash": "37d147ac08100a2f4277b4d03960700e",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -2783,16 +2783,16 @@
         },
         {
             "name": "revolution/laravel-zend-form",
-            "version": "1.1.2",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-zend-form.git",
-                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e"
+                "reference": "c72698767b7323c5afa2274d6642225c4ca9b5a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
-                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
+                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/c72698767b7323c5afa2274d6642225c4ca9b5a1",
+                "reference": "c72698767b7323c5afa2274d6642225c4ca9b5a1",
                 "shasum": ""
             },
             "require": {
@@ -2839,7 +2839,7 @@
                 "laravel",
                 "zend-form"
             ],
-            "time": "2019-05-22T09:39:27+00:00"
+            "time": "2019-05-23T10:26:25+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -5524,16 +5524,16 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v2.1.1",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63"
+                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
-                "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
+                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
                 "shasum": ""
             },
             "require": {
@@ -5543,10 +5543,10 @@
                 "symfony/console": "~2.8|~3.3|~4.0"
             },
             "require-dev": {
-                "laravel/framework": "5.7.*",
+                "laravel/framework": "5.8.*",
                 "nunomaduro/larastan": "^0.3.0",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.3"
+                "phpstan/phpstan": "^0.11",
+                "phpunit/phpunit": "~8.0"
             },
             "type": "library",
             "extra": {
@@ -5584,7 +5584,7 @@
                 "php",
                 "symfony"
             ],
-            "time": "2018-11-21T21:40:54+00:00"
+            "time": "2019-03-07T21:35:13+00:00"
         },
         {
             "name": "phar-io/manifest",
