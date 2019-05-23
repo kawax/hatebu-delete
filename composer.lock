@@ -2783,16 +2783,16 @@
         },
         {
             "name": "revolution/laravel-zend-form",
-            "version": "1.1.2",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-zend-form.git",
-                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e"
+                "reference": "c72698767b7323c5afa2274d6642225c4ca9b5a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
-                "reference": "32ad0129fc4803a8f6916912fe7f1a5510ec6c0e",
+                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/c72698767b7323c5afa2274d6642225c4ca9b5a1",
+                "reference": "c72698767b7323c5afa2274d6642225c4ca9b5a1",
                 "shasum": ""
             },
             "require": {
@@ -2839,7 +2839,7 @@
                 "laravel",
                 "zend-form"
             ],
-            "time": "2019-05-22T09:39:27+00:00"
+            "time": "2019-05-23T10:26:25+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -3599,7 +3599,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
