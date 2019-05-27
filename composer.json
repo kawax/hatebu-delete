@@ -21,7 +21,7 @@
         "laravel/tinker": "^1.0",
         "predis/predis": "^1.1",
         "revolution/laravel-zend-form": "^1.0",
-        "tomschlick/laravel-http2-server-push": "dev-patch"
+        "revolution/laravel-server-push": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -71,11 +71,5 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/kawax/laravel-http2-server-push"
-        }
-    ]
+    "prefer-stable": true
 }
