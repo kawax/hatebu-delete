@@ -22,6 +22,8 @@
                         <h2>お知らせ</h2>
                         <p>意外とユーザーがいるのでお知らせ欄。</p>
                         <hr>
+                        2019/08/08 はてな側でエラー発生中かも。様子見。
+                        <hr>
                         <p>
                             AtomAPIが終了したので非公開ブックマークでは使えなくなった。
                             <a href="http://bookmark.hatenastaff.com/entry/2018/09/19/181818" target="_blank"
