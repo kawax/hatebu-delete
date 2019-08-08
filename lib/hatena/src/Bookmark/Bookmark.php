@@ -24,7 +24,7 @@ class Bookmark
      */
     public function feed(string $user): string
     {
-        $endpoint = 'http://b.hatena.ne.jp/' . $user . '/rss';
+        $endpoint = 'http://b.hatena.ne.jp/' . $user . '/bookmark.rss';
 
         $res = $this->request($endpoint);
 
