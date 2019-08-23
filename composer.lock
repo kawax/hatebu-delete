@@ -8,22 +8,22 @@
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96"
+                "reference": "bf19d9362d0efd1e97c67a76f13f8085953bbbbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2d195779ea4f809f69764a795e2ec371dbb76a96",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/bf19d9362d0efd1e97c67a76f13f8085953bbbbd",
+                "reference": "bf19d9362d0efd1e97c67a76f13f8085953bbbbd",
                 "shasum": ""
             },
             "require": {
-                "illuminate/routing": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/session": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x",
+                "illuminate/routing": "^5.5|^6",
+                "illuminate/session": "^5.5|^6",
+                "illuminate/support": "^5.5|^6",
                 "maximebf/debugbar": "~1.15.0",
                 "php": ">=7.0",
                 "symfony/debug": "^3|^4",
@@ -72,7 +72,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2019-03-25T09:39:08+00:00"
+            "time": "2019-08-22T07:52:30+00:00"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -2803,22 +2803,22 @@
         },
         {
             "name": "revolution/laravel-server-push",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-server-push.git",
-                "reference": "d28b77605edc8aa87e81694f4416a23ccb26d2ea"
+                "reference": "46140432b0c92a7d2d6414f574c15029fe121177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-server-push/zipball/d28b77605edc8aa87e81694f4416a23ccb26d2ea",
-                "reference": "d28b77605edc8aa87e81694f4416a23ccb26d2ea",
+                "url": "https://api.github.com/repos/kawax/laravel-server-push/zipball/46140432b0c92a7d2d6414f574c15029fe121177",
+                "reference": "46140432b0c92a7d2d6414f574c15029fe121177",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/http": "^5.5 || ^6.0",
-                "illuminate/support": "^5.5 || ^6.0",
+                "illuminate/http": "*",
+                "illuminate/support": "*",
                 "php": ">=7.1.3"
             },
             "require-dev": {
@@ -2855,25 +2855,25 @@
                 "laravel",
                 "server-push"
             ],
-            "time": "2019-07-25T04:21:18+00:00"
+            "time": "2019-08-21T03:29:18+00:00"
         },
         {
             "name": "revolution/laravel-zend-form",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-zend-form.git",
-                "reference": "9fbbd69956ff3b865ef4d3188856f6a357749e81"
+                "reference": "c03d5b46b61aaf00fc10c00860b592bbad125e1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/9fbbd69956ff3b865ef4d3188856f6a357749e81",
-                "reference": "9fbbd69956ff3b865ef4d3188856f6a357749e81",
+                "url": "https://api.github.com/repos/kawax/laravel-zend-form/zipball/c03d5b46b61aaf00fc10c00860b592bbad125e1c",
+                "reference": "c03d5b46b61aaf00fc10c00860b592bbad125e1c",
                 "shasum": ""
             },
             "require": {
-                "illuminate/container": "^5.5 || ^6.0",
-                "illuminate/support": "^5.5 || ^6.0",
+                "illuminate/container": "*",
+                "illuminate/support": "*",
                 "php": ">=7.1.3",
                 "zendframework/zend-escaper": "^2.6",
                 "zendframework/zend-form": "^2.12",
@@ -2915,7 +2915,7 @@
                 "laravel",
                 "zend-form"
             ],
-            "time": "2019-07-25T04:15:38+00:00"
+            "time": "2019-08-21T03:30:55+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -6405,16 +6405,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.14",
+            "version": "7.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff"
+                "reference": "d79c053d972856b8b941bb233e39dc521a5093f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2834789aeb9ac182ad69bfdf9ae91856a59945ff",
-                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d79c053d972856b8b941bb233e39dc521a5093f0",
+                "reference": "d79c053d972856b8b941bb233e39dc521a5093f0",
                 "shasum": ""
             },
             "require": {
@@ -6474,8 +6474,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -6485,7 +6485,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-07-15T06:24:08+00:00"
+            "time": "2019-08-21T07:05:16+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
