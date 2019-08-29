@@ -35,7 +35,7 @@ class Bookmark
      * @return int
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function delete(string $url, string $endpoint = 'http://api.b.hatena.ne.jp/1/my/bookmark'): int
+    public function delete(string $url, string $endpoint = 'https://bookmark.hatenaapis.com/rest/1/my/bookmark'): int
     {
         $res = $this->request($endpoint, [
             'query' => ['url' => $url],

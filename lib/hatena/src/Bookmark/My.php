@@ -17,7 +17,7 @@ class My
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function my(string $endpoint = 'http://api.b.hatena.ne.jp/1/my'): string
+    public function my(string $endpoint = 'https://bookmark.hatenaapis.com/rest/1/my'): string
     {
         $res = $this->request($endpoint);
 
