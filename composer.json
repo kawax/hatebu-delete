@@ -18,7 +18,6 @@
         "laravel/framework": "^6.0",
         "laravel/socialite": "^4.0",
         "laravel/tinker": "^1.0",
-        "predis/predis": "^1.1",
         "revolution/laravel-zend-form": "^1.0",
         "revolution/laravel-server-push": "^1.0"
     },
