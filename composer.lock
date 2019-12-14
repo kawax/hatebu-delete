@@ -992,16 +992,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.6.2",
+            "version": "v6.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "27efba7e13aaf91a87ae9a63db158e943eb71410"
+                "reference": "ba4204f3a8b9672b6116398c165bd9c0c6eac077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/27efba7e13aaf91a87ae9a63db158e943eb71410",
-                "reference": "27efba7e13aaf91a87ae9a63db158e943eb71410",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ba4204f3a8b9672b6116398c165bd9c0c6eac077",
+                "reference": "ba4204f3a8b9672b6116398c165bd9c0c6eac077",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-12-05T13:49:53+00:00"
+            "time": "2019-12-10T16:01:57+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -1721,28 +1721,29 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "f4e7a6a1382183412246f0d361078c29fb85089e"
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/f4e7a6a1382183412246f0d361078c29fb85089e",
-                "reference": "f4e7a6a1382183412246f0d361078c29fb85089e",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.3",
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -1771,7 +1772,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-11-30T20:20:49+00:00"
+            "time": "2019-12-13T00:10:22+00:00"
         },
         {
             "name": "psr/container",
@@ -4124,22 +4125,25 @@
         },
         {
             "name": "zendframework/zend-i18n",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-i18n.git",
-                "reference": "561a815ce32c86b0f1de11135477e637926d56b6"
+                "reference": "84038e6a1838b611dcc491b1c40321fa4c3a123c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-i18n/zipball/561a815ce32c86b0f1de11135477e637926d56b6",
-                "reference": "561a815ce32c86b0f1de11135477e637926d56b6",
+                "url": "https://api.github.com/repos/zendframework/zend-i18n/zipball/84038e6a1838b611dcc491b1c40321fa4c3a123c",
+                "reference": "84038e6a1838b611dcc491b1c40321fa4c3a123c",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-stdlib": "^2.7 || ^3.0"
+            },
+            "conflict": {
+                "phpspec/prophecy": "<1.9.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.16",
@@ -4188,7 +4192,7 @@
                 "i18n",
                 "zf"
             ],
-            "time": "2019-11-18T20:31:29+00:00"
+            "time": "2019-12-12T14:08:22+00:00"
         },
         {
             "name": "zendframework/zend-inputfilter",
@@ -4740,16 +4744,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
                 "shasum": ""
             },
             "require": {
@@ -4760,7 +4764,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
             },
             "type": "library",
             "extra": {
@@ -4792,7 +4796,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-08-30T08:44:50+00:00"
+            "time": "2019-12-11T14:44:42+00:00"
         },
         {
             "name": "composer/composer",
@@ -5328,16 +5332,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.9.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d"
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/27a216cbe72327b2d6369fab721a5843be71e57d",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
                 "shasum": ""
             },
             "require": {
@@ -5350,7 +5354,9 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -5372,7 +5378,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2019-11-14T13:13:06+00:00"
+            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -6363,16 +6369,16 @@
         },
         {
             "name": "scrivo/highlight.php",
-            "version": "v9.15.10.0",
+            "version": "v9.17.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "9ad3adb4456dc91196327498dbbce6aa1ba1239e"
+                "reference": "5451a9ad6d638559cf2a092880f935c39776134e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/9ad3adb4456dc91196327498dbbce6aa1ba1239e",
-                "reference": "9ad3adb4456dc91196327498dbbce6aa1ba1239e",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/5451a9ad6d638559cf2a092880f935c39776134e",
+                "reference": "5451a9ad6d638559cf2a092880f935c39776134e",
                 "shasum": ""
             },
             "require": {
@@ -6382,7 +6388,8 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8|^5.7",
-                "symfony/finder": "^2.8"
+                "symfony/finder": "^3.4",
+                "symfony/var-dumper": "^3.4"
             },
             "suggest": {
                 "ext-dom": "Needed to make use of the features in the utilities namespace"
@@ -6410,7 +6417,7 @@
                 {
                     "name": "Vladimir Jimenez",
                     "homepage": "https://allejo.io",
-                    "role": "Contributor"
+                    "role": "Maintainer"
                 },
                 {
                     "name": "Martin Folkers",
@@ -6426,7 +6433,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2019-08-27T04:27:48+00:00"
+            "time": "2019-12-13T21:54:06+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
