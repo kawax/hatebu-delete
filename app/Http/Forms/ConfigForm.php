@@ -2,10 +2,10 @@
 
 namespace App\Http\Forms;
 
-use Revolution\ZendForm\Form as ZendForm;
-use Zend\Form\Element;
+use Revolution\LaminasForm\Form;
+use Laminas\Form\Element;
 
-class ConfigForm extends ZendForm
+class ConfigForm extends Form
 {
     /**
      * Create a new form.
