@@ -28,6 +28,7 @@ class FeedJob implements ShouldQueue
      * Create a new job instance.
      *
      * @param  User  $user
+     *
      * @return void
      */
     public function __construct(User $user)
@@ -49,10 +50,10 @@ class FeedJob implements ShouldQueue
             'token_secret'    => $this->user->token_secret,
         ];
 
-//        $my = app(My::class)->setAuth($config)->my();
-//        $my = json_decode($my);
+        $my = app(My::class)->setAuth($config)->my();
+        $my = json_decode($my);
 
-        $feed = app(Bookmark::class)->setAuth($config)->feed($this->user->name);
+        $feed = app(Bookmark::class)->setAuth($config)->feed($my->name);
         $feed = simplexml_load_string($feed);
 
         return $feed;
