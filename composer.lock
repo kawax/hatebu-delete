@@ -3107,16 +3107,16 @@
         },
         {
             "name": "revolution/laravel-laminas-form",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-laminas-form.git",
-                "reference": "f4f68442c75add5d5afd5de323d2190fce59db03"
+                "reference": "02ae787b901262424007eeeb483e148f46cafe32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-laminas-form/zipball/f4f68442c75add5d5afd5de323d2190fce59db03",
-                "reference": "f4f68442c75add5d5afd5de323d2190fce59db03",
+                "url": "https://api.github.com/repos/kawax/laravel-laminas-form/zipball/02ae787b901262424007eeeb483e148f46cafe32",
+                "reference": "02ae787b901262424007eeeb483e148f46cafe32",
                 "shasum": ""
             },
             "require": {
@@ -3130,9 +3130,9 @@
                 "php": "^7.2||^8.0"
             },
             "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.0",
-                "phpunit/phpunit": "^8.0"
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^4.0||^5.0",
+                "phpunit/phpunit": "^8.0||^9.0"
             },
             "type": "library",
             "extra": {
@@ -3163,20 +3163,20 @@
                 "laminas-form",
                 "laravel"
             ],
-            "time": "2020-01-12T07:31:29+00:00"
+            "time": "2020-03-04T12:05:59+00:00"
         },
         {
             "name": "revolution/laravel-server-push",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-server-push.git",
-                "reference": "af7b093a0086ae36ad596869498f38834eea3fca"
+                "reference": "1564bc7fa177e4fef890e03406e37c13a43fffb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-server-push/zipball/af7b093a0086ae36ad596869498f38834eea3fca",
-                "reference": "af7b093a0086ae36ad596869498f38834eea3fca",
+                "url": "https://api.github.com/repos/kawax/laravel-server-push/zipball/1564bc7fa177e4fef890e03406e37c13a43fffb1",
+                "reference": "1564bc7fa177e4fef890e03406e37c13a43fffb1",
                 "shasum": ""
             },
             "require": {
@@ -3185,8 +3185,8 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.0",
-                "phpunit/phpunit": "^8.0"
+                "orchestra/testbench": "^4.0||^5.0",
+                "phpunit/phpunit": "^8.0||^9.0"
             },
             "type": "library",
             "extra": {
@@ -3217,7 +3217,7 @@
                 "laravel",
                 "server-push"
             ],
-            "time": "2020-01-12T07:26:41+00:00"
+            "time": "2020-03-04T13:59:58+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5630,16 +5630,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v10.3.1",
+            "version": "v10.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "9aa511fda4dc4e67bd771f21cf0cd56f7b90a279"
+                "reference": "7435eb618e72c6b3e8d0f872a58548b83b819a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/9aa511fda4dc4e67bd771f21cf0cd56f7b90a279",
-                "reference": "9aa511fda4dc4e67bd771f21cf0cd56f7b90a279",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/7435eb618e72c6b3e8d0f872a58548b83b819a92",
+                "reference": "7435eb618e72c6b3e8d0f872a58548b83b819a92",
                 "shasum": ""
             },
             "require": {
@@ -5671,7 +5671,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2020-02-13T16:06:36+00:00"
+            "time": "2020-03-04T21:02:20+00:00"
         },
         {
             "name": "mockery/mockery",
