@@ -63,7 +63,7 @@ class HatenaServer extends Server
 
         foreach ($data as $key => $value) {
             if (strpos($key, 'url') !== false) {
-                if (!in_array($key, $used)) {
+                if (! in_array($key, $used)) {
                     $used[] = $key;
                 }
 

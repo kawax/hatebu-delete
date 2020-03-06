@@ -2,11 +2,10 @@
 
 namespace Revolution\Hatena\Providers;
 
+use Illuminate\Support\ServiceProvider;
+use Laravel\Socialite\Facades\Socialite;
 use Revolution\Hatena\Socialite\HatenaProvider;
 use Revolution\Hatena\Socialite\HatenaServer;
-use Illuminate\Support\ServiceProvider;
-
-use Laravel\Socialite\Facades\Socialite;
 
 class HatenaServiceProvider extends ServiceProvider
 {

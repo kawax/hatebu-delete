@@ -3,13 +3,12 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
 use Revolution\Hatena\Bookmark\Bookmark;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * 登録する必要のある全コンテナシングルトン
+     * 登録する必要のある全コンテナシングルトン.
      *
      * @var array
      */

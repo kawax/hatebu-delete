@@ -3,11 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-
-use Laravel\Socialite\Facades\Socialite;
-
 use App\Model\User;
+use Illuminate\Http\Request;
+use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
@@ -18,7 +16,7 @@ class LoginController extends Controller
 
     public function callback(Request $request)
     {
-        if (!$request->has('oauth_verifier')) {
+        if (! $request->has('oauth_verifier')) {
             return redirect('/');
         }
 

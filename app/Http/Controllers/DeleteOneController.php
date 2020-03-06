@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Jobs\DeleteOneJob;
+use Illuminate\Http\Request;
 
 class DeleteOneController extends Controller
 {
     /**
-     * 個別削除
+     * 個別削除.
      *
      * @param Request $request
      *
