@@ -2,8 +2,8 @@
 
 namespace App\Http\Forms;
 
-use Revolution\LaminasForm\Form;
 use Laminas\Form\Element;
+use Revolution\LaminasForm\Form;
 
 class ConfigForm extends Form
 {

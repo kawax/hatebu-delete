@@ -21,6 +21,6 @@ class My
     {
         $res = $this->request($endpoint);
 
-        return (string)$res->getBody();
+        return (string) $res->getBody();
     }
 }

@@ -2,13 +2,12 @@
 
 namespace App\Jobs;
 
+use App\Model\User;
 use Illuminate\Bus\Queueable;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-
-use App\Model\User;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 use Revolution\Hatena\Bookmark\Bookmark;
 use Revolution\Hatena\Bookmark\My;
 

@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Jobs\DeleteJob;
+use Illuminate\Http\Request;
 
 class DeleteController extends Controller
 {

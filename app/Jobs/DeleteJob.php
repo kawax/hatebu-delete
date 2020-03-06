@@ -2,18 +2,15 @@
 
 namespace App\Jobs;
 
+use App\Model\User;
+use App\Notifications\DeleteNotification;
+use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-
-use App\Model\User;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 use Revolution\Hatena\Bookmark\Bookmark;
-
-use App\Notifications\DeleteNotification;
-
-use Carbon\Carbon;
 
 class DeleteJob implements ShouldQueue
 {
@@ -62,13 +59,13 @@ class DeleteJob implements ShouldQueue
      */
     private function delete($item)
     {
-        $url = (string)$item->link;
+        $url = (string) $item->link;
 
         if (empty($url)) {
             return;
         }
 
-        $date = Carbon::parse((string)$item->children('http://purl.org/dc/elements/1.1/')->date);
+        $date = Carbon::parse((string) $item->children('http://purl.org/dc/elements/1.1/')->date);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;
@@ -79,7 +76,7 @@ class DeleteJob implements ShouldQueue
             $status = app(Bookmark::class)->delete($url);
 
             if ($status === Bookmark::NO_CONTENT) {
-                $this->user->notify(new DeleteNotification((string)$item->title, $url));
+                $this->user->notify(new DeleteNotification((string) $item->title, $url));
             }
         } catch (\Exception $e) {
             logger($e->getMessage());

@@ -27,7 +27,7 @@ class Entry
             'query' => ['url' => $url],
         ]);
 
-        $body = (string)$res->getBody();
+        $body = (string) $res->getBody();
 
         if ($res->getStatusCode() === 200 and $body != 'null') {
             return $body;
@@ -52,7 +52,7 @@ class Entry
             'query' => ['url' => $url],
         ]);
 
-        return (string)$res->getBody();
+        return (string) $res->getBody();
     }
 
     /**
@@ -73,11 +73,11 @@ class Entry
         $query = '';
 
         foreach ($urls as $url) {
-            $query .= 'url=' . rawurlencode($url) . '&';
+            $query .= 'url='.rawurlencode($url).'&';
         }
 
-        $res = $this->request($endpoint . '?' . $query);
+        $res = $this->request($endpoint.'?'.$query);
 
-        return (string)$res->getBody();
+        return (string) $res->getBody();
     }
 }
