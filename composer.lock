@@ -4945,16 +4945,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "472c917b2a083ec7d2fa25c55fd099d1300e2515"
+                "reference": "b912a45da3e2b22f5cb5a23e441b697a295ba011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/472c917b2a083ec7d2fa25c55fd099d1300e2515",
-                "reference": "472c917b2a083ec7d2fa25c55fd099d1300e2515",
+                "url": "https://api.github.com/repos/composer/composer/zipball/b912a45da3e2b22f5cb5a23e441b697a295ba011",
+                "reference": "b912a45da3e2b22f5cb5a23e441b697a295ba011",
                 "shasum": ""
             },
             "require": {
@@ -5021,7 +5021,17 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-03-10T13:08:05+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-03-13T19:34:27+00:00"
         },
         {
             "name": "composer/semver",
@@ -5640,16 +5650,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v10.4.0",
+            "version": "v10.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "7435eb618e72c6b3e8d0f872a58548b83b819a92"
+                "reference": "dce7587558afad3255f2f2b56b3e2732e85f5466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/7435eb618e72c6b3e8d0f872a58548b83b819a92",
-                "reference": "7435eb618e72c6b3e8d0f872a58548b83b819a92",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/dce7587558afad3255f2f2b56b3e2732e85f5466",
+                "reference": "dce7587558afad3255f2f2b56b3e2732e85f5466",
                 "shasum": ""
             },
             "require": {
@@ -5681,7 +5691,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2020-03-04T21:02:20+00:00"
+            "time": "2020-03-13T19:39:32+00:00"
         },
         {
             "name": "mockery/mockery",
