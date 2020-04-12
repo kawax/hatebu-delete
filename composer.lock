@@ -3054,16 +3054,16 @@
         },
         {
             "name": "revolution/laravel-laminas-form",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-laminas-form.git",
-                "reference": "34c4ab1b16fc1102b9db1fe73f0e46407bcd76f2"
+                "reference": "31fe3ca35cfe358884dbb8eebaa69702d58b4051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-laminas-form/zipball/34c4ab1b16fc1102b9db1fe73f0e46407bcd76f2",
-                "reference": "34c4ab1b16fc1102b9db1fe73f0e46407bcd76f2",
+                "url": "https://api.github.com/repos/kawax/laravel-laminas-form/zipball/31fe3ca35cfe358884dbb8eebaa69702d58b4051",
+                "reference": "31fe3ca35cfe358884dbb8eebaa69702d58b4051",
                 "shasum": ""
             },
             "require": {
@@ -3110,7 +3110,7 @@
                 "laminas-form",
                 "laravel"
             ],
-            "time": "2020-04-10T01:02:39+00:00"
+            "time": "2020-04-11T02:02:30+00:00"
         },
         {
             "name": "revolution/laravel-server-push",
