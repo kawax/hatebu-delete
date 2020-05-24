@@ -4970,16 +4970,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.4",
+            "version": "v3.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5"
+                "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5",
-                "reference": "10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8b64814b356b96a90d2bc942b152c80d8888b8d4",
+                "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4",
                 "shasum": ""
             },
             "require": {
@@ -5039,7 +5039,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-02T13:46:13+00:00"
+            "time": "2020-05-23T09:42:03+00:00"
         }
     ],
     "packages-dev": [
@@ -6027,16 +6027,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v10.8.0",
+            "version": "v10.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "4e4b5b92d8192ccdbdeac826be88a9bfdfde99d0"
+                "reference": "489c6942cb9fa7f57231e89c0b01cdedde6f4b47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/4e4b5b92d8192ccdbdeac826be88a9bfdfde99d0",
-                "reference": "4e4b5b92d8192ccdbdeac826be88a9bfdfde99d0",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/489c6942cb9fa7f57231e89c0b01cdedde6f4b47",
+                "reference": "489c6942cb9fa7f57231e89c0b01cdedde6f4b47",
                 "shasum": ""
             },
             "require": {
@@ -6068,7 +6068,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2020-04-26T23:51:08+00:00"
+            "time": "2020-05-23T12:51:56+00:00"
         },
         {
             "name": "mockery/mockery",
