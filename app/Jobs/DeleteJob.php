@@ -2,7 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Model\User;
+use App\Models\User;
 use App\Notifications\DeleteNotification;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;

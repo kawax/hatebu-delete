@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Jobs\DeleteJob;
-use App\Model\User;
+use App\Models\User;
 use Illuminate\Console\Command;
 
 class DeleteCommand extends Command

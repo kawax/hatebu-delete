@@ -2,7 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Model\User;
+use App\Models\User;
 use App\Notifications\DeleteNotification;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
