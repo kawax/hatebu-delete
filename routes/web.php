@@ -1,5 +1,12 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ConfigController;
+use App\Http\Controllers\DeleteController;
+use App\Http\Controllers\DeleteOneController;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,18 +20,22 @@
 
 Route::view('/', 'welcome');
 
-Route::namespace('Auth')->group(function () {
-    Route::get('login', 'LoginController@login')->name('login');
-    Route::get('callback', 'LoginController@callback')->name('callback');
-    Route::any('logout', 'LoginController@logout')->name('logout');
-});
+Route::namespace('Auth')->group(
+    function () {
+        Route::get('login', [LoginController::class, 'login'])->name('login');
+        Route::get('callback', [LoginController::class, 'callback'])->name('callback');
+        Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    }
+);
 
-Route::middleware('auth')->group(function () {
-    Route::get('home', 'HomeController')->name('home');
+Route::middleware('auth')->group(
+    function () {
+        Route::get('home', HomeController::class)->name('home');
 
-    Route::get('delete', 'DeleteController')->name('delete');
-    Route::delete('delete-one', 'DeleteOneController')->name('delete-one');
+        Route::get('delete', DeleteController::class)->name('delete');
+        Route::delete('delete-one', DeleteOneController::class)->name('delete-one');
 
-    Route::get('config', 'ConfigController@edit')->name('config.edit');
-    Route::post('config', 'ConfigController@update')->name('config.update');
-});
+        Route::get('config', [ConfigController::class, 'edit'])->name('config.edit');
+        Route::post('config', [ConfigController::class, 'update'])->name('config.update');
+    }
+);
