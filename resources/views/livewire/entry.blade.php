@@ -1,4 +1,3 @@
-{{-- Success is as dangerous as failure. --}}
 <li class="list-group-item">
     <time>{{ $date }}</time>
 
@@ -14,5 +13,4 @@
     @endunless
 
     <button wire:click="delete()" class="btn btn-outline-dark btn-sm">個別削除</button>
-
 </li>

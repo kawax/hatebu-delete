@@ -1,4 +1,3 @@
-{{-- Because she competes with no one, no one can compete with her. --}}
 <div class="card bg-primary">
     <div class="card-header text-white">
         通知
