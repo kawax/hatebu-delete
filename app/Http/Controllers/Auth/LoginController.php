@@ -16,7 +16,7 @@ class LoginController extends Controller
 
     public function callback(Request $request)
     {
-        if (! $request->has('oauth_verifier')) {
+        if ($request->missing('oauth_verifier')) {
             return redirect('/');
         }
 
