@@ -1480,22 +1480,22 @@
         },
         {
             "name": "laminas/laminas-hydrator",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-hydrator.git",
-                "reference": "244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792"
+                "reference": "f0336699910478cc45c7e34ca0fc83bf118e48bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792",
-                "reference": "244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792",
+                "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/f0336699910478cc45c7e34ca0fc83bf118e48bc",
+                "reference": "f0336699910478cc45c7e34ca0fc83bf118e48bc",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-stdlib": "^3.2.1",
+                "laminas/laminas-stdlib": "^3.3",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.2"
+                "php": "^7.3 || ~8.0.0"
             },
             "replace": {
                 "zendframework/zend-hydrator": "^3.0.2"
@@ -1506,9 +1506,8 @@
                 "laminas/laminas-modulemanager": "^2.8",
                 "laminas/laminas-serializer": "^2.9",
                 "laminas/laminas-servicemanager": "^3.3.2",
-                "phpspec/prophecy": ">=1.10.2",
-                "phpstan/phpstan": "^0.10.5",
-                "phpunit/phpunit": "^8.5.2 || ^9.0"
+                "phpunit/phpunit": "~9.3.0",
+                "vimeo/psalm": "^3.16"
             },
             "suggest": {
                 "laminas/laminas-eventmanager": "^3.2, to support aggregate hydrator usage",
@@ -1517,11 +1516,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-release-2.4": "2.4.x-dev",
-                    "dev-master": "3.1.x-dev",
-                    "dev-develop": "3.2.x-dev"
-                },
                 "laminas": {
                     "component": "Laminas\\Hydrator",
                     "config-provider": "Laminas\\Hydrator\\ConfigProvider"
@@ -1548,7 +1542,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-07-14T21:04:59+00:00"
+            "time": "2020-10-06T19:45:29+00:00"
         },
         {
             "name": "laminas/laminas-i18n",
@@ -2149,16 +2143,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.8.0",
+            "version": "v8.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0bdd5c6f12cb7cb6644e484169656245af417735"
+                "reference": "8a6bf870bcfa1597e514a9c7ee6df44db98abb54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0bdd5c6f12cb7cb6644e484169656245af417735",
-                "reference": "0bdd5c6f12cb7cb6644e484169656245af417735",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/8a6bf870bcfa1597e514a9c7ee6df44db98abb54",
+                "reference": "8a6bf870bcfa1597e514a9c7ee6df44db98abb54",
                 "shasum": ""
             },
             "require": {
@@ -2308,7 +2302,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-10-02T14:33:08+00:00"
+            "time": "2020-10-06T14:22:36+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -9250,16 +9244,16 @@
         },
         {
             "name": "sebastian/type",
-            "version": "2.2.2",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "e494dcaeb89d1458c9ccd8c819745245a1669aea"
+                "reference": "fa592377f3923946cb90bf1f6a71ba2e5f229909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/e494dcaeb89d1458c9ccd8c819745245a1669aea",
-                "reference": "e494dcaeb89d1458c9ccd8c819745245a1669aea",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/fa592377f3923946cb90bf1f6a71ba2e5f229909",
+                "reference": "fa592377f3923946cb90bf1f6a71ba2e5f229909",
                 "shasum": ""
             },
             "require": {
@@ -9271,7 +9265,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -9298,7 +9292,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T06:01:38+00:00"
+            "time": "2020-10-06T08:41:03+00:00"
         },
         {
             "name": "sebastian/version",
