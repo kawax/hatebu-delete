@@ -79,7 +79,7 @@ class DeleteJob implements ShouldQueue
                 $this->user->notify(new DeleteNotification((string) $item->title, $url));
             }
         } catch (\Exception $e) {
-            logger($e->getMessage());
+            logger()->error($e->getMessage());
         }
     }
 
