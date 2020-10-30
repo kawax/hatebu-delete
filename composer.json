@@ -8,7 +8,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.3",
+        "php": "^7.3||^8.0",
         "ext-SimpleXML": "*",
         "ext-json": "*",
         "doctrine/dbal": "^2.10",
@@ -21,6 +21,7 @@
         "livewire/livewire": "^2.2",
         "predis/predis": "^1.1",
         "revolution/laravel-laminas-form": "^1.0",
+        "revolution/laravel-namespaced-helpers": "^1.0",
         "revolution/laravel-server-push": "^1.0"
     },
     "require-dev": {

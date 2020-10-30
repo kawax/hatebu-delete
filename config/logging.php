@@ -1,6 +1,7 @@
 <?php
 
 use Monolog\Handler\StreamHandler;
+use function Revolution\Illuminate\Support\env;
 
 return [
 
