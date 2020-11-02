@@ -7530,16 +7530,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8"
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/307fb34a5ab697461ec4c9db865b20ff2fd40771",
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771",
                 "shasum": ""
             },
             "require": {
@@ -7589,9 +7589,9 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.0"
+                "source": "https://github.com/filp/whoops/tree/2.9.1"
             },
-            "time": "2020-10-20T12:00:00+00:00"
+            "time": "2020-11-01T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -7716,16 +7716,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "11.3.2",
+            "version": "v11.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "cfe3aaa6fb290fdea6c0bb059b5e6e2b991aa64a"
+                "reference": "fbd5bbe090362478eef802622a1451a823ea5cab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/cfe3aaa6fb290fdea6c0bb059b5e6e2b991aa64a",
-                "reference": "cfe3aaa6fb290fdea6c0bb059b5e6e2b991aa64a",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/fbd5bbe090362478eef802622a1451a823ea5cab",
+                "reference": "fbd5bbe090362478eef802622a1451a823ea5cab",
                 "shasum": ""
             },
             "require": {
@@ -7760,9 +7760,9 @@
             "description": "A virtual machine for web artisans.",
             "support": {
                 "issues": "https://github.com/laravel/homestead/issues",
-                "source": "https://github.com/laravel/homestead/tree/11.3.2"
+                "source": "https://github.com/laravel/homestead/tree/v11.3.3"
             },
-            "time": "2020-10-29T02:28:06+00:00"
+            "time": "2020-11-01T14:03:48+00:00"
         },
         {
             "name": "mockery/mockery",
