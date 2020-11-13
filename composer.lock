@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8ceb85848cf70717cfee908a582c828",
+    "content-hash": "88bf8a82b02f73272a44e661b9120035",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4190,63 +4190,6 @@
             "time": "2020-10-25T23:04:15+00:00"
         },
         {
-            "name": "revolution/laravel-server-push",
-            "version": "1.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kawax/laravel-server-push.git",
-                "reference": "003b94b013f2edd370ac07ab06e3318c85686bb4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-server-push/zipball/003b94b013f2edd370ac07ab06e3318c85686bb4",
-                "reference": "003b94b013f2edd370ac07ab06e3318c85686bb4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.2||^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.0||^5.0||^6.0",
-                "phpunit/phpunit": "^8.0||^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Revolution\\ServerPush\\Providers\\ServerPushServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Revolution\\ServerPush\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "kawax",
-                    "email": "kawaxbiz@gmail.com"
-                }
-            ],
-            "description": "Laravel Server Push Middleware",
-            "keywords": [
-                "http2",
-                "laravel",
-                "server-push"
-            ],
-            "support": {
-                "source": "https://github.com/kawax/laravel-server-push/tree/1.1.8"
-            },
-            "time": "2020-10-07T04:46:07+00:00"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.3",
             "source": {
@@ -6987,16 +6930,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "4089fddb67bcf6bf860d91b979e95be303835002"
+                "reference": "bcf1cc72150023e1c3dca4a353296b4c83deea41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/4089fddb67bcf6bf860d91b979e95be303835002",
-                "reference": "4089fddb67bcf6bf860d91b979e95be303835002",
+                "url": "https://api.github.com/repos/composer/semver/zipball/bcf1cc72150023e1c3dca4a353296b4c83deea41",
+                "reference": "bcf1cc72150023e1c3dca4a353296b4c83deea41",
                 "shasum": ""
             },
             "require": {
@@ -7048,7 +6991,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.2.2"
+                "source": "https://github.com/composer/semver/tree/3.2.3"
             },
             "funding": [
                 {
@@ -7064,7 +7007,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-14T08:51:15+00:00"
+            "time": "2020-11-12T11:25:27+00:00"
         },
         {
             "name": "composer/spdx-licenses",
