@@ -1,4 +1,4 @@
-<div class="card bg-primary my-2" wire:poll.60s="feed">
+<div class="card bg-primary my-2">
     <div class="card-header text-white">
         {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
     </div>
