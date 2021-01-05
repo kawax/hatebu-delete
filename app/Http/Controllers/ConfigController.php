@@ -2,23 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Forms\ConfigForm;
 use Illuminate\Http\Request;
 
 class ConfigController extends Controller
 {
     /**
-     * @param ConfigForm $form
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(ConfigForm $form)
+    public function edit()
     {
-        return view('config.edit')->with(compact('form'));
+        return view('config.edit');
     }
 
     /**
-     * @param Request $request
+     * @param  Request  $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
