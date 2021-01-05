@@ -13,7 +13,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <form action="{{ route('config.edit') }}" method="POST">
+                        <form action="{{ route('config.update') }}" method="POST">
                             <div class="form-group row">
                                 <div class="col-sm-10">
                                     @csrf
@@ -25,7 +25,7 @@
                                     特典キー
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="key" id="key" class="form-control" value="">
+                                    <input type="text" name="key" id="key" class="form-control" value="{{ auth()->user()->key ?? '' }}">
                                     <small class="form-text text-muted">
                                         <a href="https://www.pixiv.net/fanbox/creator/762638">pixivFANBOX</a>の支援特典。自動削除を解除するにはキーを空欄にします。</small>
                                 </div>
