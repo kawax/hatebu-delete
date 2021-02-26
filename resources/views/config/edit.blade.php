@@ -8,7 +8,7 @@
                 <h1>設定</h1>
 
                 <div class="alert alert-primary" role="alert">
-                    {{ session('success') ?? 'pixivFANBOXの特典キーを入力すると自動削除が有効になります' }}
+                    {{ session('success') ?? '特典キーを入力すると自動削除が有効になります' }}
                 </div>
 
                 <div class="card">
@@ -25,9 +25,9 @@
                                     特典キー
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="key" id="key" class="form-control" value="{{ auth()->user()->key ?? '' }}">
-                                    <small class="form-text text-muted">
-                                        <a href="https://www.pixiv.net/fanbox/creator/762638">pixivFANBOX</a>の支援特典。自動削除を解除するにはキーを空欄にします。</small>
+                                    <input type="text" name="key" id="key" class="form-control"
+                                           value="{{ auth()->user()->key ?? '' }}">
+                                    <small class="form-text text-muted">特典キーの受付は終了しました。</small>
                                 </div>
                             </div>
                             <div class="form-group row">

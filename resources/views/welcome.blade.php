@@ -90,11 +90,7 @@
 
                         <h3 class="border-bottom">自動削除</h3>
                         <p>
-                            自分しか使わない想定なので<a href="https://www.pixiv.net/fanbox/creator/762638" target="_blank"
-                                            rel="noreferrer noopener">pixivFANBOX</a>の支援者限定機能。設定ページでpixivFANBOXで取得した特典キーを入力したユーザーのみ自動削除が有効。
-                            {{ config('hatena.delete_days') }}日以内の条件は同じ。1日1回程度のペースで20件分から自動削除。
-                            3日で20件以下のユーザーなら自動で全部削除される設定。
-                            この辺りは後で調整されるかもしれない。
+                            受付終了。
                         </p>
 
                         <h3 class="border-bottom">通知</h3>
