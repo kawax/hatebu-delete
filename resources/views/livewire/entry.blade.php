@@ -12,5 +12,9 @@
         <span class="text-muted">『{{ $description }}』</span>
     @endunless
 
-    <button wire:click="delete()" class="btn btn-outline-dark btn-sm">個別削除</button>
+    <button wire:click="delete()"
+            class="btn btn-outline-dark btn-sm"
+            wire:loading.attr="disabled">
+        個別削除
+    </button>
 </li>
