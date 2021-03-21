@@ -47,7 +47,7 @@ class DeleteCommand extends Command
 
         foreach ($users as $user) {
             info(class_basename(self::class).' : '.$user->name);
-            DeleteJob::dispatchNow($user);
+            DeleteJob::dispatch($user);
         }
     }
 }
