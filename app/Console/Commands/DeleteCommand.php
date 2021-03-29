@@ -35,15 +35,13 @@ class DeleteCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param User $user
-     *
      * @return void
      */
-    public function handle(User $user)
+    public function handle()
     {
-        $users = $user->where('key', config('hatena.key'))
-                      ->where('fails', '<=', 10)
-                      ->get();
+        $users = User::where('key', config('hatena.key'))
+                     ->where('fails', '<=', 10)
+                     ->get();
 
         foreach ($users as $user) {
             info(class_basename(self::class).' : '.$user->name);
