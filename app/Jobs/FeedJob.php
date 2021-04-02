@@ -11,7 +11,7 @@ use Illuminate\Queue\SerializesModels;
 use Revolution\Hatena\Bookmark\Bookmark;
 use Revolution\Hatena\Bookmark\My;
 
-class FeedJob implements ShouldQueue
+class FeedJob
 {
     use Dispatchable;
     use InteractsWithQueue;
