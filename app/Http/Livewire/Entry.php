@@ -14,7 +14,7 @@ class Entry extends Component
 
     public function delete()
     {
-        DeleteOneJob::dispatchNow(request()->user(), $this->link);
+        DeleteOneJob::dispatchSync(request()->user(), $this->link);
 
         $this->emit('deleted');
     }

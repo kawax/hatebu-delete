@@ -9,7 +9,7 @@ class Delete extends Component
 {
     public function delete()
     {
-        DeleteJob::dispatchNow(request()->user());
+        DeleteJob::dispatchSync(request()->user());
 
         $this->emit('deleted');
     }

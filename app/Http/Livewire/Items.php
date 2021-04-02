@@ -18,7 +18,7 @@ class Items extends Component
 
     public function feed()
     {
-        $this->feed = FeedJob::dispatchNow(request()->user());
+        $this->feed = FeedJob::dispatchSync(request()->user());
     }
 
     public function getFeedProperty()
