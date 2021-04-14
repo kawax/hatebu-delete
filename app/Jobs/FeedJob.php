@@ -10,13 +10,15 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Revolution\Hatena\Bookmark\Bookmark;
 use Revolution\Hatena\Bookmark\My;
+use Revolution\Illuminate\Support\DispatchNow;
 
-class FeedJob
+class FeedJob implements ShouldQueue
 {
     use Dispatchable;
     use InteractsWithQueue;
     use Queueable;
     use SerializesModels;
+    use DispatchNow;
 
     /**
      * @var User

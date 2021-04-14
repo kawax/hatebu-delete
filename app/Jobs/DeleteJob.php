@@ -43,7 +43,7 @@ class DeleteJob implements ShouldQueue
      */
     public function handle()
     {
-        $feed = FeedJob::dispatchSync($this->user);
+        $feed = FeedJob::dispatchNowAndReturn($this->user);
 
         foreach ($feed->item as $item) {
             $this->delete($item);
