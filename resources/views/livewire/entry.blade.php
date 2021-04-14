@@ -2,9 +2,8 @@
     <time>{{ $date }}</time>
 
     <a href="{{ $link }}"
-       class="font-weight-bold"
-       target="_blank"
-       rel="noreferrer noopener">
+       class="fw-bold"
+       target="_blank">
         {{ $title }}
     </a>
 
