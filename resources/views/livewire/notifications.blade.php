@@ -9,8 +9,7 @@
 
                 @switch(class_basename($notification->type))
                     @case('DeleteNotification')
-                    <a href="{{ data_get($notification->data, 'url') }}" target="_blank"
-                       rel="noreferrer noopener">
+                    <a href="{{ data_get($notification->data, 'url') }}" target="_blank">
                         {{ data_get($notification->data, 'title') }}
                     </a>
                     を削除。
