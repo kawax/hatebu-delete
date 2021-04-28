@@ -11,6 +11,7 @@ use Illuminate\Queue\SerializesModels;
 use Revolution\Hatena\Bookmark\Bookmark;
 use Revolution\Hatena\Bookmark\My;
 use Revolution\Illuminate\Support\DispatchNow;
+use SimpleXMLElement;
 
 class FeedJob implements ShouldQueue
 {
@@ -21,28 +22,22 @@ class FeedJob implements ShouldQueue
     use DispatchNow;
 
     /**
-     * @var User
-     */
-    protected $user;
-
-    /**
      * Create a new job instance.
      *
      * @param  User  $user
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(protected User $user)
     {
-        $this->user = $user;
     }
 
     /**
      * Execute the job.
      *
-     * @return \SimpleXMLElement
+     * @return SimpleXMLElement
      */
-    public function handle()
+    public function handle(): SimpleXMLElement
     {
         $config = [
             'consumer_key'    => config('services.hatena.client_id'),
@@ -55,8 +50,7 @@ class FeedJob implements ShouldQueue
         $my = json_decode($my);
 
         $feed = app(Bookmark::class)->setAuth($config)->feed($my->name);
-        $feed = simplexml_load_string($feed);
 
-        return $feed;
+        return simplexml_load_string($feed);
     }
 }

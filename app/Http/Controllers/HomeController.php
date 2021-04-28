@@ -11,7 +11,7 @@ class HomeController extends Controller
      *
      * @param  Request  $request
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\View
      */
     public function __invoke(Request $request)
     {

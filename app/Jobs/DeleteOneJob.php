@@ -19,33 +19,23 @@ class DeleteOneJob implements ShouldQueue
     use SerializesModels;
 
     /**
-     * @var User
-     */
-    protected $user;
-
-    /**
-     * @var string
-     */
-    protected $url;
-
-    /**
      * Create a new job instance.
      *
-     * @param User   $user
-     * @param string $url
+     * @param  User  $user
+     * @param  string  $url
      *
      * @return void
      */
-    public function __construct(User $user, string $url)
-    {
-        $this->user = $user;
-        $this->url = $url;
+    public function __construct(
+        protected User $user,
+        protected string $url
+    ) {
     }
 
     /**
      * Execute the job.
      *
-     * @param Bookmark $bookmark
+     * @param  Bookmark  $bookmark
      *
      * @return void
      */

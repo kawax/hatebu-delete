@@ -4,10 +4,11 @@ namespace App\Http\Livewire;
 
 use App\Jobs\FeedJob;
 use Livewire\Component;
+use SimpleXMLElement;
 
 class Items extends Component
 {
-    protected $feed;
+    protected SimpleXMLElement $feed;
 
     protected $listeners = ['deleted' => 'feed'];
 
@@ -21,7 +22,7 @@ class Items extends Component
         $this->feed = FeedJob::dispatchNowAndReturn(request()->user());
     }
 
-    public function getFeedProperty()
+    public function getFeedProperty(): SimpleXMLElement
     {
         return $this->feed;
     }

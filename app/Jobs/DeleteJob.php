@@ -4,12 +4,12 @@ namespace App\Jobs;
 
 use App\Models\User;
 use App\Notifications\DeleteNotification;
-use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Date;
 use Revolution\Hatena\Bookmark\Bookmark;
 
 class DeleteJob implements ShouldQueue
@@ -20,20 +20,15 @@ class DeleteJob implements ShouldQueue
     use SerializesModels;
 
     /**
-     * @var User
-     */
-    protected $user;
-
-    /**
      * Create a new job instance.
      *
-     * @param User $user
+     * @param  User  $user
      *
      * @return void
      */
-    public function __construct(User $user)
-    {
-        $this->user = $user;
+    public function __construct(
+        protected User $user
+    ) {
     }
 
     /**
@@ -55,7 +50,7 @@ class DeleteJob implements ShouldQueue
     }
 
     /**
-     * @param mixed $item
+     * @param  mixed  $item
      */
     private function delete($item)
     {
@@ -65,7 +60,7 @@ class DeleteJob implements ShouldQueue
             return;
         }
 
-        $date = Carbon::parse((string) $item->children('http://purl.org/dc/elements/1.1/')->date);
+        $date = Date::parse((string) $item->children('http://purl.org/dc/elements/1.1/')->date);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;
@@ -84,7 +79,7 @@ class DeleteJob implements ShouldQueue
     }
 
     /**
-     * @param \Exception $exception
+     * @param  \Exception  $exception
      */
     public function failed(\Exception $exception)
     {

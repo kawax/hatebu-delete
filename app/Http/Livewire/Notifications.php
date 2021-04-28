@@ -2,11 +2,12 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Database\Eloquent\Collection;
 use Livewire\Component;
 
 class Notifications extends Component
 {
-    public $notifications;
+    public Collection $notifications;
 
     protected $listeners = ['deleted' => 'notifications'];
 

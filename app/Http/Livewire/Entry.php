@@ -7,10 +7,10 @@ use Livewire\Component;
 
 class Entry extends Component
 {
-    public $link;
-    public $title;
-    public $description;
-    public $date;
+    public string $link;
+    public string $title;
+    public string $description;
+    public string $date;
 
     public function delete()
     {
