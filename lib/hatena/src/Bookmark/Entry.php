@@ -14,8 +14,8 @@ class Entry
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getinfo
      *
-     * @param string $url
-     * @param string $endpoint ノーマル版を使うなら"http://b.hatena.ne.jp/entry/json/"
+     * @param  string  $url
+     * @param  string  $endpoint  ノーマル版を使うなら"http://b.hatena.ne.jp/entry/json/"
      *
      * @return string
      *
@@ -31,16 +31,16 @@ class Entry
 
         if ($res->getStatusCode() === 200 and $body != 'null') {
             return $body;
-        } else {
-            return '';
         }
+
+        return '';
     }
 
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/getcount
      *
-     * @param string $url
-     * @param string $endpoint
+     * @param  string  $url
+     * @param  string  $endpoint
      *
      * @return string
      *
@@ -56,8 +56,8 @@ class Entry
     }
 
     /**
-     * @param array  $urls
-     * @param string $endpoint
+     * @param  array  $urls
+     * @param  string  $endpoint
      *
      * @return string
      *

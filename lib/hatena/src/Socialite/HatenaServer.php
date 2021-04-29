@@ -62,7 +62,7 @@ class HatenaServer extends Server
         $used = ['url_name', 'display_name', 'profile_image_url'];
 
         foreach ($data as $key => $value) {
-            if (strpos($key, 'url') !== false) {
+            if (str_contains($key, 'url')) {
                 if (! in_array($key, $used)) {
                     $used[] = $key;
                 }

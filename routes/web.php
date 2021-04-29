@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ConfigController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,7 +27,7 @@ Route::namespace('Auth')->group(
 
 Route::middleware('auth')->group(
     function () {
-        Route::get('home', HomeController::class)->name('home');
+        Route::view('home', 'home')->name('home');
 
         Route::get('config', [ConfigController::class, 'edit'])->name('config.edit');
         Route::post('config', [ConfigController::class, 'update'])->name('config.update');

@@ -13,10 +13,10 @@ trait HatenaClient
     /**
      * @var ClientInterface
      */
-    protected $client;
+    protected ClientInterface $client;
 
     /**
-     * @param ClientInterface $client
+     * @param  ClientInterface  $client
      */
     public function setClient(ClientInterface $client)
     {
@@ -24,23 +24,21 @@ trait HatenaClient
     }
 
     /**
-     * @return Client|ClientInterface
+     * @return ClientInterface
      */
-    public function getClient()
+    public function getClient(): ClientInterface
     {
-        if (is_null($this->client)) {
-            $this->client = new Client();
-        }
+        $this->client ??= new Client();
 
         return $this->client;
     }
 
     /**
-     * @param array $auth ['consumer_key', 'consumer_secret', 'token', 'token_secret']
+     * @param  array  $auth  ['consumer_key', 'consumer_secret', 'token', 'token_secret']
      *
      * @return $this
      */
-    public function setAuth(array $auth)
+    public function setAuth(array $auth): static
     {
         $stack = HandlerStack::create();
 
@@ -56,18 +54,16 @@ trait HatenaClient
     }
 
     /**
-     * @param string $url
-     * @param array  $options
-     * @param string $method
+     * @param  string  $url
+     * @param  array  $options
+     * @param  string  $method
      *
      * @return ResponseInterface
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function request($url, array $options = [], $method = 'GET')
+    public function request(string $url, array $options = [], $method = 'GET'): ResponseInterface
     {
-        $response = $this->getClient()->request($method, $url, $options);
-
-        return $response;
+        return $this->getClient()->request($method, $url, $options);
     }
 }
