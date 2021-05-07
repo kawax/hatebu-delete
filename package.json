@@ -12,7 +12,7 @@
   "devDependencies": {
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21",
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "^5.0.0",
     "cross-env": "^7.0",
     "laravel-mix": "^6.0",
     "lodash": "^4.17.19",
