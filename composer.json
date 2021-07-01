@@ -73,6 +73,7 @@
         "ide-helper:generate": "php artisan ide-helper:generate",
         "ide-helper:models": "php artisan ide-helper:models -N",
         "sail:up": "vendor/bin/sail up -d",
-        "sail:down": "vendor/bin/sail down"
+        "sail:down": "vendor/bin/sail down",
+        "sail:backup": "vendor/bin/sail art sail:backup:mysql"
     }
 }
