@@ -7913,16 +7913,16 @@
         },
         {
             "name": "revolution/sail-db-backup",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/sail-db-backup.git",
-                "reference": "79bad5efd53283d3ff413d9066536ba0a5b2356a"
+                "reference": "b1a3304dc2850f72ff7c032390e576bfb0d52fa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/79bad5efd53283d3ff413d9066536ba0a5b2356a",
-                "reference": "79bad5efd53283d3ff413d9066536ba0a5b2356a",
+                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/b1a3304dc2850f72ff7c032390e576bfb0d52fa2",
+                "reference": "b1a3304dc2850f72ff7c032390e576bfb0d52fa2",
                 "shasum": ""
             },
             "require": {
@@ -7963,9 +7963,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/sail-db-backup/issues",
-                "source": "https://github.com/kawax/sail-db-backup/tree/1.0.0"
+                "source": "https://github.com/kawax/sail-db-backup/tree/1.0.1"
             },
-            "time": "2021-07-01T02:35:20+00:00"
+            "time": "2021-07-01T13:06:18+00:00"
         },
         {
             "name": "sebastian/cli-parser",
