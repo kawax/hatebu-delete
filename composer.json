@@ -15,7 +15,6 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/oauth-subscriber": "0.4.*",
-        "guzzlehttp/psr7": "^1.8",
         "laravel/framework": "^8.0",
         "laravel/socialite": "^5.0",
         "laravel/tinker": "^2.0",
@@ -75,6 +74,6 @@
         "ide-helper:models": "php artisan ide-helper:models -N",
         "sail:up": "vendor/bin/sail up -d",
         "sail:down": "vendor/bin/sail down",
-        "sail:backup": "vendor/bin/sail art sail:backup:mysql"
+        "sail:backup": "vendor/bin/sail exec -T -u sail \"laravel.test\" php artisan sail:backup:mysql"
     }
 }
