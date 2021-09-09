@@ -11,7 +11,7 @@ class My
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/rest/my#get_my
      *
-     * @param string $endpoint
+     * @param  string  $endpoint
      *
      * @return string
      *

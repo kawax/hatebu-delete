@@ -24,8 +24,8 @@ class DeleteNotification extends Notification
     /**
      * Create a new notification instance.
      *
-     * @param string $title
-     * @param string $url
+     * @param  string  $title
+     * @param  string  $url
      *
      * @return void
      */
@@ -38,7 +38,7 @@ class DeleteNotification extends Notification
     /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed $notifiable
+     * @param  mixed  $notifiable
      *
      * @return array
      */
@@ -50,7 +50,7 @@ class DeleteNotification extends Notification
     /**
      * Get the array representation of the notification.
      *
-     * @param  mixed $notifiable
+     * @param  mixed  $notifiable
      *
      * @return array
      */
