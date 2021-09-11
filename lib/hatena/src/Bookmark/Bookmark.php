@@ -15,8 +15,10 @@ class Bookmark
      * 非公開だと取得できないし、キャッシュされてるので更新が遅い。
      *
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
+     *
      * @param  string  $user
      * @return string
+     *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function feed(string $user): string
@@ -30,9 +32,11 @@ class Bookmark
 
     /**
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/rest/bookmark#delete_my_bookmark
+     *
      * @param  string  $url
      * @param  string  $endpoint
      * @return int
+     *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function delete(string $url, string $endpoint = 'https://bookmark.hatenaapis.com/rest/1/my/bookmark'): int
