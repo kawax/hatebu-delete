@@ -16,7 +16,6 @@ class ConfigController extends Controller
 
     /**
      * @param  Request  $request
-     *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request)

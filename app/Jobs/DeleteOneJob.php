@@ -23,7 +23,6 @@ class DeleteOneJob implements ShouldQueue
      *
      * @param  User  $user
      * @param  string  $url
-     *
      * @return void
      */
     public function __construct(
@@ -36,7 +35,6 @@ class DeleteOneJob implements ShouldQueue
      * Execute the job.
      *
      * @param  Bookmark  $bookmark
-     *
      * @return void
      */
     public function handle(Bookmark $bookmark)
