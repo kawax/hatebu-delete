@@ -35,7 +35,6 @@ trait HatenaClient
 
     /**
      * @param  array  $auth  ['consumer_key', 'consumer_secret', 'token', 'token_secret']
-     *
      * @return $this
      */
     public function setAuth(array $auth): static
@@ -57,7 +56,6 @@ trait HatenaClient
      * @param  string  $url
      * @param  array  $options
      * @param  string  $method
-     *
      * @return ResponseInterface
      *
      * @throws \GuzzleHttp\Exception\GuzzleException

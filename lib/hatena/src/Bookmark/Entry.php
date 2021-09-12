@@ -16,7 +16,6 @@ class Entry
      *
      * @param  string  $url
      * @param  string  $endpoint  ノーマル版を使うなら"http://b.hatena.ne.jp/entry/json/"
-     *
      * @return string
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -41,7 +40,6 @@ class Entry
      *
      * @param  string  $url
      * @param  string  $endpoint
-     *
      * @return string
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -58,7 +56,6 @@ class Entry
     /**
      * @param  array  $urls
      * @param  string  $endpoint
-     *
      * @return string
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
