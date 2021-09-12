@@ -12,7 +12,6 @@ class My
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/apis/rest/my#get_my
      *
      * @param  string  $endpoint
-     *
      * @return string
      *
      * @throws \GuzzleHttp\Exception\GuzzleException

@@ -23,7 +23,6 @@ class DeleteJob implements ShouldQueue
      * Create a new job instance.
      *
      * @param  User  $user
-     *
      * @return void
      */
     public function __construct(
