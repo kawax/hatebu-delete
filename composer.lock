@@ -2285,16 +2285,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.7.1",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "d3101289835201307cec5d732004eb7125871a56"
+                "reference": "991e5bd8a48e450d23cd55336964f916e92a6464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/d3101289835201307cec5d732004eb7125871a56",
-                "reference": "d3101289835201307cec5d732004eb7125871a56",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/991e5bd8a48e450d23cd55336964f916e92a6464",
+                "reference": "991e5bd8a48e450d23cd55336964f916e92a6464",
                 "shasum": ""
             },
             "require": {
@@ -2345,7 +2345,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.7.1"
+                "source": "https://github.com/livewire/livewire/tree/v2.7.2"
             },
             "funding": [
                 {
@@ -2353,7 +2353,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-19T22:35:51+00:00"
+            "time": "2021-10-20T02:27:35+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6476,12 +6476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "cbc686c16a21f01ba351d74be4d1ef84c89fc8f2"
+                "reference": "b99e21259c09a6da2614f286b7ad548fec8036a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/cbc686c16a21f01ba351d74be4d1ef84c89fc8f2",
-                "reference": "cbc686c16a21f01ba351d74be4d1ef84c89fc8f2",
+                "url": "https://api.github.com/repos/composer/composer/zipball/b99e21259c09a6da2614f286b7ad548fec8036a0",
+                "reference": "b99e21259c09a6da2614f286b7ad548fec8036a0",
                 "shasum": ""
             },
             "require": {
@@ -6567,7 +6567,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-19T20:00:10+00:00"
+            "time": "2021-10-20T20:20:33+00:00"
         },
         {
             "name": "composer/metadata-minifier",
