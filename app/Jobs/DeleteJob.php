@@ -9,7 +9,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Carbon;
 use Revolution\Hatena\Bookmark\Bookmark;
 
 class DeleteJob implements ShouldQueue
@@ -59,7 +59,7 @@ class DeleteJob implements ShouldQueue
             return;
         }
 
-        $date = Date::parse((string) $item->children('http://purl.org/dc/elements/1.1/')->date);
+        $date = Carbon::parse((string) $item->children('dc')->date);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;
