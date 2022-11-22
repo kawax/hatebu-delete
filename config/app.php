@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
-
 use function Revolution\Illuminate\Support\env;
 
 return [
