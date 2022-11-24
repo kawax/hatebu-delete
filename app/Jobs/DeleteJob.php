@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Bookmark\Feed;
 use App\Models\User;
 use App\Notifications\DeleteNotification;
 use Illuminate\Bus\Queueable;
@@ -37,7 +38,7 @@ class DeleteJob implements ShouldQueue
      */
     public function handle()
     {
-        $feed = FeedJob::dispatchNowAndReturn($this->user);
+        $feed = app(Feed::class)->get($this->user);
 
         foreach ($feed->item as $item) {
             $this->delete($item);
@@ -59,7 +60,7 @@ class DeleteJob implements ShouldQueue
             return;
         }
 
-        $date = Carbon::parse((string) $item->children('dc', true)->date);
+        $date = Carbon::parse((string) $item->children('dc', true)->date)->addHours(9);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;

@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Jobs\FeedJob;
+use App\Bookmark\Feed;
 use Livewire\Component;
 use SimpleXMLElement;
 
@@ -19,7 +19,7 @@ class Items extends Component
 
     public function feed()
     {
-        $this->feed = FeedJob::dispatchNowAndReturn(request()->user());
+        $this->feed = app(Feed::class)->get(request()->user());
     }
 
     public function getFeedProperty(): SimpleXMLElement

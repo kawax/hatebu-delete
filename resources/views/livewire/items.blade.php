@@ -7,7 +7,7 @@
             <livewire:entry :link="(string)$item->link"
                             :title="(string)$item->title"
                             :description="(string)$item->description"
-                            :date="Carbon\Carbon::parse($item->children('http://purl.org/dc/elements/1.1/')->date)->toDateTimeString()"
+                            :date="Date::parse($item->children('dc', true)->date)->addHours(9)->toDateTimeString()"
                             :key="(string)$item->link">
         @endforeach
     </ul>
