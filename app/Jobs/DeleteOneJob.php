@@ -36,6 +36,7 @@ class DeleteOneJob implements ShouldQueue
      * Execute the job.
      *
      * @return void
+     *
      * @throws GuzzleException
      */
     public function handle()
