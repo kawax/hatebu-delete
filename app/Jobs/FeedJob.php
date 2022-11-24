@@ -34,6 +34,7 @@ class FeedJob implements ShouldQueue
      * Execute the job.
      *
      * @return SimpleXMLElement
+     *
      * @throws GuzzleException
      */
     public function handle(): SimpleXMLElement

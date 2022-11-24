@@ -2,9 +2,9 @@
 
 namespace Revolution\Hatena\Socialite;
 
-use League\OAuth1\Client\Server\User;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Server;
+use League\OAuth1\Client\Server\User;
 
 /**
  * http://localdisk.hatenablog.com/entry/2015/12/03/142656
