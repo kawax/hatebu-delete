@@ -59,7 +59,7 @@ class DeleteJob implements ShouldQueue
             return;
         }
 
-        $date = Carbon::parse((string) $item->children('dc')->date);
+        $date = Carbon::parse((string) $item->children('dc', true)->date);
 
         if ($date->gt(now()->subDays(config('hatena.delete_days')))) {
             return;
