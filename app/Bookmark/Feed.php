@@ -11,6 +11,7 @@ class Feed
     /**
      * @param  User  $user
      * @return SimpleXMLElement
+     *
      * @throws GuzzleException
      */
     public function get(User $user): SimpleXMLElement
