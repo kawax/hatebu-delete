@@ -4,6 +4,7 @@ namespace App\Jobs;
 
 use App\Models\User;
 use App\Notifications\DeleteNotification;
+use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -34,19 +35,12 @@ class DeleteOneJob implements ShouldQueue
     /**
      * Execute the job.
      *
-     * @param  Bookmark  $bookmark
      * @return void
+     * @throws GuzzleException
      */
-    public function handle(Bookmark $bookmark)
+    public function handle()
     {
-        $config = [
-            'consumer_key'    => config('services.hatena.client_id'),
-            'consumer_secret' => config('services.hatena.client_secret'),
-            'token'           => $this->user->access_token,
-            'token_secret'    => $this->user->token_secret,
-        ];
-
-        $status = $bookmark->setAuth($config)->delete($this->url);
+        $status = $this->user->hatenaBookmark()->delete($this->url);
 
         if ($status === Bookmark::NO_CONTENT) {
             $this->user->notify(new DeleteNotification($this->url, $this->url));

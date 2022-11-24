@@ -2,7 +2,7 @@
 
 namespace Revolution\Hatena\Socialite;
 
-use Laravel\Socialite\One\User;
+use League\OAuth1\Client\Server\User;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Server;
 
@@ -43,7 +43,7 @@ class HatenaServer extends Server
      */
     public function urlUserDetails()
     {
-        return 'http://n.hatena.com/applications/my.json';
+        return 'https://n.hatena.com/applications/my.json';
     }
 
     /**

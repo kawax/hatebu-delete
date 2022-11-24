@@ -8,7 +8,7 @@ class Bookmark
 {
     use HatenaClient;
 
-    const NO_CONTENT = 204;
+    public const NO_CONTENT = 204;
 
     /**
      * Atom APIが使えなくなるのでRSSから取得。

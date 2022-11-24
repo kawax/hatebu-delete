@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Revolution\Hatena\Bookmark\Bookmark;
 
 class User extends Authenticatable
 {
@@ -36,4 +37,19 @@ class User extends Authenticatable
         'key',
         'remember_token',
     ];
+
+    /**
+     * @return Bookmark
+     */
+    public function hatenaBookmark(): Bookmark
+    {
+        $config = [
+            'consumer_key' => config('services.hatena.client_id'),
+            'consumer_secret' => config('services.hatena.client_secret'),
+            'token' => $this->access_token,
+            'token_secret' => $this->token_secret,
+        ];
+
+        return app(Bookmark::class)->setAuth($config);
+    }
 }

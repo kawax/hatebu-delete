@@ -17,10 +17,13 @@ trait HatenaClient
 
     /**
      * @param  ClientInterface  $client
+     * @return HatenaClient
      */
-    public function setClient(ClientInterface $client)
+    public function setClient(ClientInterface $client): static
     {
         $this->client = $client;
+
+        return $this;
     }
 
     /**
@@ -34,19 +37,19 @@ trait HatenaClient
     }
 
     /**
-     * @param  array  $auth  ['consumer_key', 'consumer_secret', 'token', 'token_secret']
+     * @param  array  $config  ['consumer_key', 'consumer_secret', 'token', 'token_secret']
      * @return $this
      */
-    public function setAuth(array $auth): static
+    public function setAuth(array $config): static
     {
         $stack = HandlerStack::create();
 
-        $middleware = new Oauth1($auth);
+        $middleware = new Oauth1($config);
         $stack->push($middleware);
 
         $this->client = new Client([
             'handler' => $stack,
-            'auth'    => 'oauth',
+            'auth' => 'oauth',
         ]);
 
         return $this;
@@ -60,7 +63,7 @@ trait HatenaClient
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function request(string $url, array $options = [], $method = 'GET'): ResponseInterface
+    public function request(string $url, array $options = [], string $method = 'GET'): ResponseInterface
     {
         return $this->getClient()->request($method, $url, $options);
     }

@@ -66,11 +66,11 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
-        "ide-helper:meta": "php artisan ide-helper:meta",
-        "ide-helper:generate": "php artisan ide-helper:generate",
-        "ide-helper:models": "php artisan ide-helper:models -N",
+        "ide-helper:meta": "sail artisan ide-helper:meta",
+        "ide-helper:generate": "sail artisan ide-helper:generate",
+        "ide-helper:models": "sail artisan ide-helper:models -N",
         "sail:up": "vendor/bin/sail up -d",
         "sail:down": "vendor/bin/sail down",
-        "sail:backup": "vendor/bin/sail exec -T -u sail \"laravel.test\" php artisan sail:backup:mysql"
+        "sail:backup": "vendor/bin/sail artisan sail:backup:mysql"
     }
 }
