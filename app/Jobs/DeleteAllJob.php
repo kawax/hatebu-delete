@@ -13,7 +13,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Carbon;
 use Revolution\Hatena\Bookmark\Bookmark;
 
-class DeleteJob implements ShouldQueue
+class DeleteAllJob implements ShouldQueue
 {
     use Dispatchable;
     use InteractsWithQueue;

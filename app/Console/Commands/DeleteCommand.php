@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Jobs\DeleteJob;
+use App\Jobs\DeleteAllJob;
 use App\Models\User;
 use Illuminate\Console\Command;
 
@@ -45,7 +45,7 @@ class DeleteCommand extends Command
 
         foreach ($users as $user) {
             info(class_basename(self::class).' : '.$user->name);
-            DeleteJob::dispatch($user);
+            DeleteAllJob::dispatch($user);
         }
     }
 }
