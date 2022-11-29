@@ -17,19 +17,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::namespace('Auth')->group(
-    function () {
-        Route::get('login', [LoginController::class, 'login'])->name('login');
-        Route::get('callback', [LoginController::class, 'callback'])->name('callback');
-        Route::post('logout', [LoginController::class, 'logout'])->name('logout');
-    }
-);
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'login'])->name('login');
+    Route::get('callback', [LoginController::class, 'callback'])->name('callback');
+});
 
-Route::middleware('auth')->group(
-    function () {
-        Route::view('home', 'home')->name('home');
+Route::middleware('auth')->group(function () {
+    Route::view('home', 'home')->name('home');
 
-        Route::get('config', [ConfigController::class, 'edit'])->name('config.edit');
-        Route::post('config', [ConfigController::class, 'update'])->name('config.update');
-    }
-);
+    Route::get('config', [ConfigController::class, 'edit'])->name('config.edit');
+    Route::post('config', [ConfigController::class, 'update'])->name('config.update');
+
+    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+});
