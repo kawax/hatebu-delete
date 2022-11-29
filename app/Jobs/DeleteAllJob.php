@@ -75,7 +75,7 @@ class DeleteAllJob implements ShouldQueue
                 $this->user->notify(new DeleteNotification((string) $item->title, $url));
             }
         } catch (\Exception $e) {
-            logger()->error($e->getMessage(), [$date->toDateTimeString()]);
+            logger()->error($e->getMessage());
         }
     }
 
