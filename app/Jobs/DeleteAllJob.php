@@ -38,6 +38,7 @@ class DeleteAllJob implements ShouldQueue
      * Execute the job.
      *
      * @return void
+     *
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      * @throws RequestException
@@ -57,6 +58,7 @@ class DeleteAllJob implements ShouldQueue
 
     /**
      * @param  SimpleXMLElement  $item
+     *
      * @throws RequestException
      */
     private function delete(SimpleXMLElement $item)
