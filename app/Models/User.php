@@ -50,6 +50,6 @@ class User extends Authenticatable
             'token_secret' => $this->token_secret,
         ];
 
-        return app(Bookmark::class)->setAuth($config);
+        return app(Bookmark::class)->withHatena($config);
     }
 }

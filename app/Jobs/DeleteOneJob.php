@@ -10,7 +10,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Revolution\Hatena\Bookmark\Bookmark;
 
 class DeleteOneJob implements ShouldQueue
 {
@@ -39,11 +38,11 @@ class DeleteOneJob implements ShouldQueue
      *
      * @throws GuzzleException
      */
-    public function handle()
+    public function handle(): void
     {
-        $status = $this->user->hatenaBookmark()->delete($this->url);
+        $res = $this->user->hatenaBookmark()->delete($this->url);
 
-        if ($status === Bookmark::NO_CONTENT) {
+        if ($res->successful()) {
             $this->user->notify(new DeleteNotification($this->url, $this->url));
         }
     }

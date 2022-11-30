@@ -8,10 +8,13 @@ use App\Notifications\DeleteNotification;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Http\Client\RequestException;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Carbon;
-use Revolution\Hatena\Bookmark\Bookmark;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
+use SimpleXMLElement;
 
 class DeleteAllJob implements ShouldQueue
 {
@@ -35,8 +38,11 @@ class DeleteAllJob implements ShouldQueue
      * Execute the job.
      *
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
+     * @throws RequestException
      */
-    public function handle()
+    public function handle(): void
     {
         $feed = app(Feed::class)->get($this->user);
 
@@ -50,9 +56,10 @@ class DeleteAllJob implements ShouldQueue
     }
 
     /**
-     * @param  mixed  $item
+     * @param  SimpleXMLElement  $item
+     * @throws RequestException
      */
-    private function delete($item)
+    private function delete(SimpleXMLElement $item)
     {
         $url = (string) $item->link;
 
@@ -64,18 +71,14 @@ class DeleteAllJob implements ShouldQueue
                       ->addHours(9) //日本時間に合わせる調整
                       ->addDays(config('hatena.delete_days')); //○日後に削除
 
-        if ($date->gt(now())) {
+        if ($date->greaterThan(now())) {
             return;
         }
 
-        try {
-            $status = $this->user->hatenaBookmark()->delete($url);
+        $res = $this->user->hatenaBookmark()->delete($url)->throw();
 
-            if ($status === Bookmark::NO_CONTENT) {
-                $this->user->notify(new DeleteNotification((string) $item->title, $url));
-            }
-        } catch (\Exception $e) {
-            logger()->error($e->getMessage());
+        if ($res->successful()) {
+            $this->user->notify(new DeleteNotification((string) $item->title, $url));
         }
     }
 
