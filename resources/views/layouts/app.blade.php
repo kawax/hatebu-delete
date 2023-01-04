@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     @livewireStyles
 </head>
@@ -78,10 +78,6 @@
         @yield('content')
     </main>
 </div>
-
-
-<!-- Scripts -->
-<script src="{{ mix('js/app.js') }}"></script>
 
 @livewireScripts
 
