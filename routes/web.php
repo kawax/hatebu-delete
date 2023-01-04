@@ -25,8 +25,7 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::view('home', 'home')->name('home');
 
-    Route::get('config', [ConfigController::class, 'edit'])->name('config.edit');
-    Route::post('config', [ConfigController::class, 'update'])->name('config.update');
+    Route::singleton('config', ConfigController::class)->except('show');
 
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 });
