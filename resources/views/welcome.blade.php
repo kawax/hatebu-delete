@@ -10,7 +10,7 @@
                         <h1>はてなブックマーク全削除</h1>
                         <p class="lead">全削除機能がいつまでも使えないままなので代わりに削除するツール。躊躇なく削除されるので注意。</p>
                         <p>
-                            <a href="http://bookmark.hatenastaff.com/entry/2017/11/24/173417" target="_blank"
+                            <a href="https://bookmark.hatenastaff.com/entry/2017/11/24/173417" target="_blank"
                                rel="noreferrer noopener">ブックマークの全削除が行えない不具合が発生しています -
                                 はてなブックマーク開発ブログ</a>
                         </p>
@@ -41,7 +41,7 @@
                         <hr>
                         <p>
                             AtomAPIが終了したので非公開ブックマークでは使えなくなった。
-                            <a href="http://bookmark.hatenastaff.com/entry/2018/09/19/181818" target="_blank"
+                            <a href="https://bookmark.hatenastaff.com/entry/2018/09/19/181818" target="_blank"
                                rel="noreferrer noopener">はてなブックマークAtom
                                 APIのサポートを終了します - はてなブックマーク開発ブログ</a>
                         </p>
