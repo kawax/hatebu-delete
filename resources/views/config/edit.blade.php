@@ -14,6 +14,7 @@
                 <div class="card">
                     <div class="card-body">
                         <form action="{{ route('config.update') }}" method="POST">
+                            @method('PUT')
                             <div class="form-group row">
                                 <div class="col-sm-10">
                                     @csrf
