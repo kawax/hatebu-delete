@@ -7361,23 +7361,23 @@
         },
         {
             "name": "revolution/sail-db-backup",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/sail-db-backup.git",
-                "reference": "11b9eaa11359d2a5965b439cd08e4f38706ac39f"
+                "reference": "1c4d3aa220a56f555f188075c16317ee31fae32f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/11b9eaa11359d2a5965b439cd08e4f38706ac39f",
-                "reference": "11b9eaa11359d2a5965b439cd08e4f38706ac39f",
+                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/1c4d3aa220a56f555f188075c16317ee31fae32f",
+                "reference": "1c4d3aa220a56f555f188075c16317ee31fae32f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^8.0||^9.0",
-                "illuminate/filesystem": "^8.0||^9.0",
-                "illuminate/support": "^8.0||^9.0",
-                "php": "^7.4||^8.0"
+                "illuminate/console": "^9.0||^10.0",
+                "illuminate/filesystem": "^9.0||^10.0",
+                "illuminate/support": "^9.0||^10.0",
+                "php": "^8.0"
             },
             "type": "library",
             "extra": {
@@ -7411,9 +7411,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/sail-db-backup/issues",
-                "source": "https://github.com/kawax/sail-db-backup/tree/1.1.0"
+                "source": "https://github.com/kawax/sail-db-backup/tree/1.2.0"
             },
-            "time": "2022-01-22T02:45:08+00:00"
+            "time": "2023-01-28T11:31:20+00:00"
         },
         {
             "name": "sebastian/cli-parser",
