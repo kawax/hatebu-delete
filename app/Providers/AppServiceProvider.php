@@ -12,7 +12,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    public $singletons = [
+    public array $singletons = [
         Bookmark::class => Bookmark::class,
     ];
 

@@ -2,23 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class ConfigController extends Controller
 {
-    /**
-     * @return \Illuminate\Contracts\View\View
-     */
-    public function edit()
+    public function edit(): View
     {
         return view('config.edit');
     }
 
-    /**
-     * @param  Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function update(Request $request)
+    public function update(Request $request): RedirectResponse
     {
         $request->user()->fill($request->only([
             'key',

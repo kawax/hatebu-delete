@@ -34,10 +34,8 @@ class DeleteCommand extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return void
      */
-    public function handle()
+    public function handle(): int
     {
         $users = User::where('key', config('hatena.key'))
                      ->where('fails', '<=', 10)
@@ -47,5 +45,7 @@ class DeleteCommand extends Command
             info(class_basename(self::class).' : '.$user->name);
             DeleteAllJob::dispatch($user);
         }
+
+        return 0;
     }
 }

@@ -4,17 +4,18 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
-    public function login()
+    public function login(): RedirectResponse
     {
         return Socialite::driver('hatena')->redirect();
     }
 
-    public function callback(Request $request)
+    public function callback(Request $request): RedirectResponse
     {
         if ($request->missing('oauth_verifier')) {
             return redirect('/');
@@ -40,7 +41,7 @@ class LoginController extends Controller
         return redirect('home');
     }
 
-    public function logout(Request $request)
+    public function logout(Request $request): RedirectResponse
     {
         auth()->logout();
 

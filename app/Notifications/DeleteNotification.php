@@ -12,26 +12,16 @@ class DeleteNotification extends Notification
     use Queueable;
 
     /**
-     * @var string
-     */
-    protected $title;
-
-    /**
-     * @var string
-     */
-    protected $url;
-
-    /**
      * Create a new notification instance.
      *
      * @param  string  $title
      * @param  string  $url
      * @return void
      */
-    public function __construct($title, $url)
-    {
-        $this->title = $title;
-        $this->url = $url;
+    public function __construct(
+        protected string $title,
+        protected string $url,
+    ) {
     }
 
     /**
@@ -40,7 +30,7 @@ class DeleteNotification extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via(mixed $notifiable): array
     {
         return ['database'];
     }
@@ -51,11 +41,11 @@ class DeleteNotification extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray(mixed $notifiable): array
     {
         return [
             'title' => $this->title,
-            'url'   => $this->url,
+            'url' => $this->url,
         ];
     }
 }

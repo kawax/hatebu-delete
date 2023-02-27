@@ -19,10 +19,20 @@ class Bookmark
      */
     public function delete(
         string $url,
-        string $endpoint = 'https://bookmark.hatenaapis.com/rest/1/my/bookmark'
+        string $endpoint = 'https://bookmark.hatenaapis.com/rest/1/my/bookmark',
     ): Response {
         return Http::hatena($this->config)
                    ->asForm()
                    ->delete($endpoint, ['url' => $url]);
+    }
+
+    public function search(
+        string $q = '',
+        int $of = 0,
+        int $limit = 20,
+        string $endpoint = 'https://b.hatena.ne.jp/my/search/json',
+    ): Response {
+        return Http::hatena($this->config)
+                   ->get($endpoint, compact(['q', 'of', 'limit']));
     }
 }
