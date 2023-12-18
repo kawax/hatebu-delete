@@ -1,12 +1,12 @@
 {
-  "resources/sass/app.scss": {
-    "file": "assets/app-0ab87dfd.css",
-    "src": "resources/sass/app.scss",
-    "isEntry": true
-  },
   "resources/js/app.js": {
-    "file": "assets/app-a1a7abfc.js",
-    "src": "resources/js/app.js",
-    "isEntry": true
+    "file": "assets/app-cd3fea72.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-86c731de.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
   }
 }
