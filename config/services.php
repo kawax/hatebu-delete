@@ -22,7 +22,7 @@ return [
     ],
 
     'ses' => [
-        'key'    => env('SES_KEY'),
+        'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => env('SES_REGION', 'us-east-1'),
     ],
@@ -32,16 +32,16 @@ return [
     ],
 
     'stripe' => [
-        'model'  => App\Models\User::class,
-        'key'    => env('STRIPE_KEY'),
+        'model' => App\Models\User::class,
+        'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
     'hatena' => [
-        'client_id'     => env('HATENA_CLIENT'),
+        'client_id' => env('HATENA_CLIENT'),
         'client_secret' => env('HATENA_CLIENT_SECRET'),
-        'redirect'      => env('HATENA_REDIRECT'),
-        'scope'         => [
+        'redirect' => env('HATENA_REDIRECT'),
+        'scope' => [
             'read_public',
             'write_public',
             'read_private',
