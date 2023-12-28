@@ -3,7 +3,7 @@
 use function Revolution\Illuminate\Support\env;
 
 return [
-    'key'         => env('SPECIAL_KEY'),
+    'key' => env('SPECIAL_KEY'),
     'delete_days' => env('DELETE_DAYS', 3),
-    'analytics'   => env('GOOGLE_ANALYTICS'),
+    'analytics' => env('GOOGLE_ANALYTICS'),
 ];
