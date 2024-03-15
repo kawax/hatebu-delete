@@ -7,15 +7,10 @@ use Livewire\Component;
 
 class Delete extends Component
 {
-    public function delete()
+    public function delete(): void
     {
         DeleteAllJob::dispatchSync(request()->user());
 
         $this->dispatch('deleted');
-    }
-
-    public function render()
-    {
-        return view('livewire.delete');
     }
 }

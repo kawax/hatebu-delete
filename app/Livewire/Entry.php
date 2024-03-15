@@ -12,15 +12,10 @@ class Entry extends Component
     public string $description;
     public string $date;
 
-    public function delete()
+    public function delete(): void
     {
         DeleteOneJob::dispatchSync(request()->user(), $this->link);
 
         $this->dispatch('deleted');
-    }
-
-    public function render()
-    {
-        return view('livewire.entry');
     }
 }

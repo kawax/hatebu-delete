@@ -3,20 +3,20 @@
 namespace App\Livewire;
 
 use Illuminate\Database\Eloquent\Collection;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class Notifications extends Component
 {
     public Collection $notifications;
 
-    protected $listeners = ['deleted' => 'notifications'];
-
-    public function mount()
+    public function mount(): void
     {
         $this->notifications();
     }
 
-    public function notifications()
+    #[On('deleted')]
+    public function notifications(): void
     {
         request()->user()
                  ->readNotifications()
@@ -27,10 +27,5 @@ class Notifications extends Component
         $notifications->markAsRead();
 
         $this->notifications = $notifications->take(20);
-    }
-
-    public function render()
-    {
-        return view('livewire.notifications');
     }
 }
