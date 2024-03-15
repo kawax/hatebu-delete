@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Jobs\DeleteAllJob;
 use Livewire\Component;
@@ -11,7 +11,7 @@ class Delete extends Component
     {
         DeleteAllJob::dispatchSync(request()->user());
 
-        $this->emit('deleted');
+        $this->dispatch('deleted');
     }
 
     public function render()

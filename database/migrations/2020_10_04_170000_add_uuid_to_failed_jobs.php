@@ -13,12 +13,9 @@ class AddUuidToFailedJobs extends Migration
      */
     public function up()
     {
-        Schema::table(
-            'failed_jobs',
-            function (Blueprint $table) {
-                $table->string('uuid')->after('id')->nullable()->unique();
-            }
-        );
+        Schema::table('failed_jobs', function (Blueprint $table) {
+            $table->string('uuid')->after('id')->nullable()->unique();
+        });
     }
 
     /**
@@ -28,11 +25,8 @@ class AddUuidToFailedJobs extends Migration
      */
     public function down()
     {
-        Schema::table(
-            'failed_jobs',
-            function (Blueprint $table) {
-                $table->dropColumn('uuid');
-            }
-        );
+        Schema::table('failed_jobs', function (Blueprint $table) {
+            $table->dropColumn('uuid');
+        });
     }
 }

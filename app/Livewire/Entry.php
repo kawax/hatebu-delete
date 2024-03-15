@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Jobs\DeleteOneJob;
 use Livewire\Component;
@@ -16,7 +16,7 @@ class Entry extends Component
     {
         DeleteOneJob::dispatchSync(request()->user(), $this->link);
 
-        $this->emit('deleted');
+        $this->dispatch('deleted');
     }
 
     public function render()
