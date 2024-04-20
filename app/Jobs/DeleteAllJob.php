@@ -15,6 +15,7 @@ use Illuminate\Support\Carbon;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use SimpleXMLElement;
+use Throwable;
 
 class DeleteAllJob implements ShouldQueue
 {
@@ -30,7 +31,7 @@ class DeleteAllJob implements ShouldQueue
      * @return void
      */
     public function __construct(
-        protected User $user
+        protected User $user,
     ) {
     }
 
@@ -70,8 +71,8 @@ class DeleteAllJob implements ShouldQueue
         }
 
         $date = Carbon::parse((string) $item->children('dc', true)->date)
-                      ->addHours(9) //日本時間に合わせる調整
-                      ->addDays(config('hatena.delete_days')); //○日後に削除
+            ->addHours(9) //日本時間に合わせる調整
+            ->addDays(config('hatena.delete_days')); //○日後に削除
 
         if ($date->greaterThan(now())) {
             return;
@@ -84,11 +85,10 @@ class DeleteAllJob implements ShouldQueue
         }
     }
 
-    /**
-     * @param  \Exception  $exception
-     */
-    public function failed(\Exception $exception)
+    public function failed(?Throwable $exception): void
     {
+        info($exception->getMessage());
+
         $this->user->increment('fails');
     }
 }

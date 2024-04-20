@@ -1,16 +1,12 @@
-@extends('layouts.app')
+<x-app-layout>
+    <div class="grid md:grid-cols-2 pt-6 gap-6">
+        <div>
+            <livewire:delete/>
 
-@section('content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <livewire:delete/>
-
-                <livewire:items/>
-            </div>
-            <div class="col-md-6">
-                <livewire:notifications/>
-            </div>
+            <livewire:items/>
+        </div>
+        <div>
+            <livewire:notifications/>
         </div>
     </div>
-@endsection
+</x-app-layout>

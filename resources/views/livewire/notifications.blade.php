@@ -1,24 +1,26 @@
-<div class="card bg-primary">
-    <div class="card-header text-white">
+<x-ts-card>
+    <x-slot:header>
         通知
-    </div>
-    <ul class="list-group list-group-flush">
+    </x-slot:header>
+
+    <ul class="list-none">
         @foreach($notifications as $notification)
-            <li class="list-group-item">
+            <li class="pb-3 border-b">
                 <time>{{ $notification->created_at }}</time>
 
                 @switch(class_basename($notification->type))
                     @case('DeleteNotification')
-                    <a href="{{ data_get($notification->data, 'url') }}" target="_blank">
-                        {{ data_get($notification->data, 'title') }}
-                    </a>
-                    を削除。
-                    @break
+                        <a href="{{ data_get($notification->data, 'url') }}" target="_blank"
+                           class="font-bold text-indigo-500 hover:text-indigo-800 underline">
+                            {{ data_get($notification->data, 'title') }}
+                        </a>
+                        を削除。
+                        @break
                     @default
-                    ...
-                    @break
+                        ...
+                        @break
                 @endswitch
             </li>
         @endforeach
     </ul>
-</div>
+</x-ts-card>

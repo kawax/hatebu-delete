@@ -1,19 +1,17 @@
-<li class="list-group-item">
+<li class="pb-3 border-b">
     <time>{{ $date }}</time>
 
     <a href="{{ $link }}"
-       class="fw-bold"
+       class="font-bold text-indigo-500 hover:text-indigo-800 underline"
        target="_blank">
         {{ $title }}
     </a>
 
     @unless(empty($description))
-        <span class="text-muted">『{{ $description }}』</span>
+        <span class="text-gray-500">『{{ $description }}』</span>
     @endunless
 
-    <button wire:click="delete()"
-            class="btn btn-outline-dark btn-sm"
-            wire:loading.attr="disabled">
+    <x-ts-button wire:click="delete()" wire:loading.attr="disabled" outline sm>
         個別削除
-    </button>
+    </x-ts-button>
 </li>

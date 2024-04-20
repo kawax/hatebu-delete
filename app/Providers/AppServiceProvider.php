@@ -4,34 +4,31 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Revolution\Hatena\Bookmark\Bookmark;
+use TallStackUi\Facades\TallStackUi;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * 登録する必要のある全コンテナシングルトン.
-     *
-     * @var array
-     */
     public array $singletons = [
         Bookmark::class => Bookmark::class,
     ];
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        //
+        TallStackUi::personalize()
+            ->card()
+            ->block('wrapper.second', 'dark:bg-dark-700 flex w-full flex-col bg-white shadow-md')
+            ->block('header.wrapper', 'dark:border-b-dark-600 flex items-center justify-between border-b border-b-gray-100 p-4
+ bg-indigo-500')
+            ->block('header.text', 'text-md text-white dark:text-dark-300');
     }
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }

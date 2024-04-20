@@ -37,12 +37,11 @@ class DeleteCommand extends Command
      */
     public function handle(): int
     {
-        $users = User::where('key', config('hatena.key'))
-                     ->where('fails', '<=', 10)
-                     ->get();
+        $users = User::whereIn('name', config('hatena.users'))->get();
 
         foreach ($users as $user) {
-            info(class_basename(self::class).' : '.$user->name);
+            context(['user' => $user->name]);
+            info(class_basename(self::class));
             DeleteAllJob::dispatch($user);
         }
 

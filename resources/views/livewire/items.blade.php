@@ -1,8 +1,9 @@
-<div class="card bg-primary my-2">
-    <div class="card-header text-white">
+<x-ts-card>
+    <x-slot:header>
         {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
-    </div>
-    <ul class="list-group list-group-flush">
+    </x-slot:header>
+
+    <ul class="list-none">
         @foreach($this->feed->item as $item)
             <livewire:entry :link="(string)$item->link"
                             :title="(string)$item->title"
@@ -11,4 +12,4 @@
                             :key="(string)$item->link">
         @endforeach
     </ul>
-</div>
+</x-ts-card>
