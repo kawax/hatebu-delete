@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "788feed4cc9b91768bbb901d555fc8ce",
+    "content-hash": "9265562064ed53d30c658ec4f578d6bb",
     "packages": [
         {
             "name": "brick/math",
@@ -7834,28 +7834,24 @@
         },
         {
             "name": "revolution/sail-db-backup",
-            "version": "2.1.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/sail-db-backup.git",
-                "reference": "da35c15bc34bb74e810c3d5fb3cf3edaf326c024"
+                "reference": "c4dd915ca5b6cf6c9f58a0ded207fc9d6ca0337b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/da35c15bc34bb74e810c3d5fb3cf3edaf326c024",
-                "reference": "da35c15bc34bb74e810c3d5fb3cf3edaf326c024",
+                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/c4dd915ca5b6cf6c9f58a0ded207fc9d6ca0337b",
+                "reference": "c4dd915ca5b6cf6c9f58a0ded207fc9d6ca0337b",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^10.0||^11.0",
-                "illuminate/filesystem": "^10.0||^11.0",
-                "illuminate/process": "^10.0||^11.0",
                 "illuminate/support": "^10.0||^11.0",
                 "php": "^8.1"
             },
             "require-dev": {
-                "orchestra/testbench": "^8.0",
-                "phpunit/phpunit": "^10.0"
+                "orchestra/testbench": "^8.0||^9.0"
             },
             "type": "library",
             "extra": {
@@ -7889,9 +7885,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/sail-db-backup/issues",
-                "source": "https://github.com/kawax/sail-db-backup/tree/2.1.0"
+                "source": "https://github.com/kawax/sail-db-backup/tree/3.0.0"
             },
-            "time": "2024-02-20T05:14:53+00:00"
+            "time": "2024-03-29T06:24:27+00:00"
         },
         {
             "name": "sebastian/cli-parser",

@@ -26,7 +26,7 @@
         "mockery/mockery": "^1.3",
         "nunomaduro/collision": "^8.1",
         "phpunit/phpunit": "^10.0",
-        "revolution/sail-db-backup": "^2.1"
+        "revolution/sail-db-backup": "^3.0"
     },
     "autoload": {
         "psr-4": {
