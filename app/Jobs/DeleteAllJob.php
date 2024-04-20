@@ -70,8 +70,7 @@ class DeleteAllJob implements ShouldQueue
             return;
         }
 
-        $date = Carbon::parse((string) $item->children('dc', true)->date)
-            ->addHours(9) //日本時間に合わせる調整
+        $date = Carbon::parse((string) $item->children('dc', true)->date, config('app.timezone'))
             ->addDays(config('hatena.delete_days')); //○日後に削除
 
         if ($date->greaterThan(now())) {
