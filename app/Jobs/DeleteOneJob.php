@@ -27,7 +27,7 @@ class DeleteOneJob implements ShouldQueue
      */
     public function __construct(
         protected User $user,
-        protected string $url
+        protected string $url,
     ) {
     }
 
@@ -40,7 +40,7 @@ class DeleteOneJob implements ShouldQueue
      */
     public function handle(): void
     {
-        $res = $this->user->hatenaBookmark()->delete($this->url);
+        $res = $this->user->hatenaBookmark()->delete($this->url)->throw();
 
         if ($res->successful()) {
             $this->user->notify(new DeleteNotification($this->url, $this->url));
