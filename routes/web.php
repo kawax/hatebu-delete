@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
@@ -15,5 +16,5 @@ Route::middleware('guest')
 Route::middleware('auth')->group(function () {
     Route::view('home', 'home')->name('home');
 
-    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::post('logout', LogoutController::class)->name('logout');
 });
