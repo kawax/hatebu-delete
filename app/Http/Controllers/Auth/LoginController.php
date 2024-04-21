@@ -18,7 +18,7 @@ class LoginController extends Controller
     public function callback(Request $request): RedirectResponse
     {
         if ($request->missing('oauth_verifier')) {
-            return redirect('/');
+            return to_route('welcome');
         }
 
         /**
@@ -38,17 +38,6 @@ class LoginController extends Controller
 
         auth()->login($loginUser, true);
 
-        return redirect('home');
-    }
-
-    public function logout(Request $request): RedirectResponse
-    {
-        auth()->logout();
-
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
-
-        return redirect('/');
+        return to_route('home');
     }
 }
