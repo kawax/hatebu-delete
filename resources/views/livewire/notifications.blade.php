@@ -11,7 +11,7 @@
                 @switch(class_basename($notification->type))
                     @case('DeleteNotification')
                         <a href="{{ data_get($notification->data, 'url') }}" target="_blank"
-                           class="font-bold text-indigo-500 hover:text-indigo-800 underline">
+                           class="font-bold text-indigo-500 hover:text-indigo-800 underline break-all">
                             {{ data_get($notification->data, 'title') }}
                         </a>
                         を削除。
