@@ -2264,16 +2264,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f"
+                "reference": "415782b7e48223342f1a616c16c45a95b15b2318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8eab8983c83c30e0bacbef8d311e3f3b8172727f",
-                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/415782b7e48223342f1a616c16c45a95b15b2318",
+                "reference": "415782b7e48223342f1a616c16c45a95b15b2318",
                 "shasum": ""
             },
             "require": {
@@ -2291,13 +2291,13 @@
             "require-dev": {
                 "doctrine/dbal": "^3.6.3 || ^4.0",
                 "doctrine/orm": "^2.15.2 || ^3.0",
-                "friendsofphp/php-cs-fixer": "^3.52.1",
+                "friendsofphp/php-cs-fixer": "^3.57.2",
                 "kylekatarnls/multi-tester": "^2.5.3",
                 "ondrejmirtes/better-reflection": "^6.25.0.4",
                 "phpmd/phpmd": "^2.15.0",
                 "phpstan/extension-installer": "^1.3.1",
-                "phpstan/phpstan": "^1.10.65",
-                "phpunit/phpunit": "^10.5.15",
+                "phpstan/phpstan": "^1.11.2",
+                "phpunit/phpunit": "^10.5.20",
                 "squizlabs/php_codesniffer": "^3.9.0"
             },
             "bin": [
@@ -2366,7 +2366,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-24T14:26:34+00:00"
+            "time": "2024-06-03T17:25:54+00:00"
         },
         {
             "name": "nette/schema",
@@ -6034,16 +6034,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v1.27.1",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "f958100e4d4bae3344d289d8f31d49a577bd8bea"
+                "reference": "f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/f958100e4d4bae3344d289d8f31d49a577bd8bea",
-                "reference": "f958100e4d4bae3344d289d8f31d49a577bd8bea",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8",
+                "reference": "f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8",
                 "shasum": ""
             },
             "require": {
@@ -6087,7 +6087,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v1.27.1"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -6095,7 +6095,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-20T18:36:30+00:00"
+            "time": "2024-06-03T04:02:16+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
