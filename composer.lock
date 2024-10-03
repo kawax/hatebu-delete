@@ -5965,16 +5965,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v1.35.7",
+            "version": "v1.35.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "b444d2372402205e1d6417497a3827cfe5f7e881"
+                "reference": "0ef8deb78ad2e31115b819933d76e20cdd4df67b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/b444d2372402205e1d6417497a3827cfe5f7e881",
-                "reference": "b444d2372402205e1d6417497a3827cfe5f7e881",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/0ef8deb78ad2e31115b819933d76e20cdd4df67b",
+                "reference": "0ef8deb78ad2e31115b819933d76e20cdd4df67b",
                 "shasum": ""
             },
             "require": {
@@ -6024,7 +6024,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v1.35.7"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v1.35.8"
             },
             "funding": [
                 {
@@ -6032,7 +6032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-24T12:34:44+00:00"
+            "time": "2024-10-03T02:09:01+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -9313,7 +9313,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -9321,6 +9321,6 @@
         "ext-simplexml": "*",
         "ext-json": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
