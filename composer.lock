@@ -5965,16 +5965,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v1.35.8",
+            "version": "v1.35.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "0ef8deb78ad2e31115b819933d76e20cdd4df67b"
+                "reference": "a9364244e61682f09ab1da89014761717997be4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/0ef8deb78ad2e31115b819933d76e20cdd4df67b",
-                "reference": "0ef8deb78ad2e31115b819933d76e20cdd4df67b",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/a9364244e61682f09ab1da89014761717997be4d",
+                "reference": "a9364244e61682f09ab1da89014761717997be4d",
                 "shasum": ""
             },
             "require": {
@@ -6024,7 +6024,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v1.35.8"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v1.35.9"
             },
             "funding": [
                 {
@@ -6032,7 +6032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-03T02:09:01+00:00"
+            "time": "2024-10-03T02:26:37+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6453,16 +6453,16 @@
         },
         {
             "name": "composer/class-map-generator",
-            "version": "1.3.4",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/class-map-generator.git",
-                "reference": "b1b3fd0b4eaf3ddf3ee230bc340bf3fff454a1a3"
+                "reference": "98bbf6780e56e0fd2404fe4b82eb665a0f93b783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/b1b3fd0b4eaf3ddf3ee230bc340bf3fff454a1a3",
-                "reference": "b1b3fd0b4eaf3ddf3ee230bc340bf3fff454a1a3",
+                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/98bbf6780e56e0fd2404fe4b82eb665a0f93b783",
+                "reference": "98bbf6780e56e0fd2404fe4b82eb665a0f93b783",
                 "shasum": ""
             },
             "require": {
@@ -6475,8 +6475,8 @@
                 "phpstan/phpstan-deprecation-rules": "^1",
                 "phpstan/phpstan-phpunit": "^1",
                 "phpstan/phpstan-strict-rules": "^1.1",
-                "symfony/filesystem": "^5.4 || ^6",
-                "symfony/phpunit-bridge": "^5"
+                "phpunit/phpunit": "^8",
+                "symfony/filesystem": "^5.4 || ^6"
             },
             "type": "library",
             "extra": {
@@ -6506,7 +6506,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/class-map-generator/issues",
-                "source": "https://github.com/composer/class-map-generator/tree/1.3.4"
+                "source": "https://github.com/composer/class-map-generator/tree/1.4.0"
             },
             "funding": [
                 {
@@ -6522,7 +6522,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-12T14:13:04+00:00"
+            "time": "2024-10-03T18:14:00+00:00"
         },
         {
             "name": "composer/pcre",
