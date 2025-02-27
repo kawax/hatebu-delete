@@ -1,4 +1,4 @@
-<x-ts-card>
+<x-ts-card color="primary">
     <x-slot:header>
         通知
     </x-slot:header>

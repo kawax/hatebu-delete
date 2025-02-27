@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="pt-6">
-        <x-ts-card>
+        <x-ts-card color="primary">
             <x-slot:header>
                 <h1 class="text-3xl">はてなブックマーク全削除</h1>
             </x-slot:header>

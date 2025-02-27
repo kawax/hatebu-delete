@@ -1,4 +1,4 @@
-<x-ts-card>
+<x-ts-card color="primary">
     <x-slot:header>
         {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
     </x-slot:header>
