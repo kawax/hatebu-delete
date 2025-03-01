@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.12.2",
+            "version": "0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "901eddb1e45a8e0f689302e40af871c181ecbe40"
+                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/901eddb1e45a8e0f689302e40af871c181ecbe40",
-                "reference": "901eddb1e45a8e0f689302e40af871c181ecbe40",
+                "url": "https://api.github.com/repos/brick/math/zipball/866551da34e9a618e64a819ee1e01c20d8a588ba",
+                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.12.2"
+                "source": "https://github.com/brick/math/tree/0.12.3"
             },
             "funding": [
                 {
@@ -64,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-26T10:21:45+00:00"
+            "time": "2025-02-28T13:11:00+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -6153,16 +6153,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v2.0.6",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "651d0add8f18beca625aa67c54a7c4f16772965a"
+                "reference": "35c2c73e45c5c33b826c2f3dad7ee455dd101f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/651d0add8f18beca625aa67c54a7c4f16772965a",
-                "reference": "651d0add8f18beca625aa67c54a7c4f16772965a",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/35c2c73e45c5c33b826c2f3dad7ee455dd101f36",
+                "reference": "35c2c73e45c5c33b826c2f3dad7ee455dd101f36",
                 "shasum": ""
             },
             "require": {
@@ -6218,7 +6218,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v2.0.6"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v2.0.7"
             },
             "funding": [
                 {
@@ -6226,7 +6226,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-25T20:21:05+00:00"
+            "time": "2025-03-01T02:20:06+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
