@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-layouts.app :title="config('app.name')">
     <div class="grid md:grid-cols-2 pt-6 gap-6">
         <div>
             <livewire:delete/>
@@ -9,4 +9,4 @@
             <livewire:notifications/>
         </div>
     </div>
-</x-app-layout>
+</x-layouts.app>
