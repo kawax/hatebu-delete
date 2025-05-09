@@ -1,7 +1,9 @@
-<flux:card>
-    <flux:heading>
-        {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
-    </flux:heading>
+<x-card>
+    <x-slot:header>
+        <flux:heading>
+            {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
+        </flux:heading>
+    </x-slot:header>
 
     <ul class="list-none">
         @foreach($this->feed->item as $item)
@@ -12,4 +14,4 @@
                             :key="(string)$item->link">
         @endforeach
     </ul>
-</flux:card>
+</x-card>

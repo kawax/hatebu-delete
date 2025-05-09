@@ -1,7 +1,9 @@
-<flux:card>
-    <flux:heading>
-        通知
-    </flux:heading>
+<x-card>
+    <x-slot:header>
+        <flux:heading>
+            通知
+        </flux:heading>
+    </x-slot:header>
 
     <ul class="list-none">
         @foreach($notifications as $notification)
@@ -23,4 +25,4 @@
             </li>
         @endforeach
     </ul>
-</flux:card>
+</x-card>
