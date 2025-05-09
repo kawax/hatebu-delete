@@ -11,7 +11,7 @@
         <span class="text-gray-500">『{{ $description }}』</span>
     @endunless
 
-    <x-ts-button wire:click="delete()" wire:loading.attr="disabled" outline sm>
+    <flux:button wire:click="delete()" wire:loading.attr="disabled" variant="outline" size="sm">
         個別削除
-    </x-ts-button>
+    </flux:button>
 </li>

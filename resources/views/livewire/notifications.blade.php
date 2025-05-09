@@ -1,7 +1,7 @@
-<x-ts-card color="primary">
-    <x-slot:header>
+<flux:card>
+    <flux:heading>
         通知
-    </x-slot:header>
+    </flux:heading>
 
     <ul class="list-none">
         @foreach($notifications as $notification)
@@ -23,4 +23,4 @@
             </li>
         @endforeach
     </ul>
-</x-ts-card>
+</flux:card>
