@@ -1,8 +1,8 @@
-<li class="py-3 border-b border-gray-400">
+<li class="py-3 border-b border-gray-400  hover:bg-zinc-50  dark:hover:bg-zinc-600/75">
     <time>{{ $date }}</time>
 
     <a href="{{ $link }}"
-       class="font-bold text-indigo-500 hover:text-indigo-800 underline"
+       class="font-bold text-indigo-500 hover:text-indigo-700 hover:underline"
        target="_blank">
         {{ $title }}
     </a>
