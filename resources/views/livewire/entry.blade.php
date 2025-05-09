@@ -1,4 +1,4 @@
-<li class="pb-3 border-b">
+<li class="pb-3 border-b/50">
     <time>{{ $date }}</time>
 
     <a href="{{ $link }}"
