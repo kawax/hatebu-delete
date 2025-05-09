@@ -2,7 +2,7 @@
     <div class="pt-6">
         <x-card>
             <x-slot:header>
-                <flux:heading size="xl">はてなブックマーク全削除</flux:heading>
+                <flux:heading level="1" size="xl">はてなブックマーク全削除</flux:heading>
             </x-slot:header>
 
             <div>
