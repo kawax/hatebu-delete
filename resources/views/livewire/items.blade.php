@@ -1,6 +1,6 @@
 <x-card>
     <x-slot:header>
-        <flux:heading>
+        <flux:heading size="xl">
             {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
         </flux:heading>
     </x-slot:header>

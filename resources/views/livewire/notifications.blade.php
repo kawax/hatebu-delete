@@ -1,6 +1,6 @@
 <x-card>
     <x-slot:header>
-        <flux:heading>
+        <flux:heading size="xl">
             通知
         </flux:heading>
     </x-slot:header>
