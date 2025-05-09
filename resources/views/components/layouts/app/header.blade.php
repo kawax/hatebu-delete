@@ -37,6 +37,11 @@
                                         {{ auth()->user()->initials() }}
                                     </span>
                                 </span>
+
+                                <div class="grid flex-1 text-start text-sm leading-tight">
+                                    <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
+                                    <span class="truncate text-xs"></span>
+                                </div>
                             </div>
                         </div>
                     </flux:menu.radio.group>
