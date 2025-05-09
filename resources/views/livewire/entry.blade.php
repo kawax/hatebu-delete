@@ -1,4 +1,4 @@
-<li class="py-3 border-b border-gray-400  hover:bg-zinc-50  dark:hover:bg-zinc-600/75">
+<li class="py-3 border-b border-gray-400">
     <time>{{ $date }}</time>
 
     <a href="{{ $link }}"
