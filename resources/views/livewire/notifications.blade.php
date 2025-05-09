@@ -1,6 +1,8 @@
-<x-ts-card color="primary">
+<x-card>
     <x-slot:header>
-        通知
+        <flux:heading>
+            通知
+        </flux:heading>
     </x-slot:header>
 
     <ul class="list-none">
@@ -23,4 +25,4 @@
             </li>
         @endforeach
     </ul>
-</x-ts-card>
+</x-card>

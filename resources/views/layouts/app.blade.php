@@ -8,7 +8,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <tallstackui:script/>
+    @fluxAppearance
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -24,6 +24,7 @@
 </div>
 
 @livewireScripts
+@fluxScripts
 
 </body>
 </html>

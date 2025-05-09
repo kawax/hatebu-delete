@@ -1,6 +1,8 @@
-<x-ts-card color="primary">
+<x-card>
     <x-slot:header>
-        {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
+        <flux:heading>
+            {{ $this->feed->channel->title }}（最近の20件） {{ now() }}
+        </flux:heading>
     </x-slot:header>
 
     <ul class="list-none">
@@ -12,4 +14,4 @@
                             :key="(string)$item->link">
         @endforeach
     </ul>
-</x-ts-card>
+</x-card>

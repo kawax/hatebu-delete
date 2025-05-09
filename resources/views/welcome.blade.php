@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="pt-6">
-        <x-ts-card color="primary">
+        <x-card>
             <x-slot:header>
-                <h1 class="text-3xl">はてなブックマーク全削除</h1>
+                <flux:heading size="xl">はてなブックマーク全削除</flux:heading>
             </x-slot:header>
 
             <div>
@@ -10,8 +10,8 @@
             </div>
 
             <div class="mt-3">
-                <x-ts-button text="ログイン" href="{{ route('login') }}" sm/>
+                <flux:button href="{{ route('login') }}" size="sm">ログイン</flux:button>
             </div>
-        </x-ts-card>
+        </x-card>
     </div>
 </x-app-layout>
