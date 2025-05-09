@@ -7,7 +7,7 @@
 
     <ul class="list-none">
         @foreach($notifications as $notification)
-            <li class="py-3 border-b border-gray-400">
+            <li class="py-3 border-b border-zinc-200">
                 <time>{{ $notification->created_at }}</time>
 
                 @switch(class_basename($notification->type))
