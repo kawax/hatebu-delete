@@ -19,9 +19,9 @@ class Notifications extends Component
     public function notifications(): void
     {
         request()->user()
-                 ->readNotifications()
-                 ->where('created_at', '<', now()->subDays(config('hatena.delete_days')))
-                 ->delete();
+            ->readNotifications()
+            ->where('created_at', '<', now()->subDays(config('hatena.delete_days')))
+            ->delete();
 
         $notifications = request()->user()->notifications;
         $notifications->markAsRead();

@@ -21,20 +21,16 @@ class DeleteOneJob implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @param  User  $user
-     * @param  string  $url
      * @return void
      */
     public function __construct(
         protected User $user,
         protected string $url,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the job.
      *
-     * @return void
      *
      * @throws GuzzleException
      */

@@ -27,18 +27,15 @@ class DeleteAllJob implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @param  User  $user
      * @return void
      */
     public function __construct(
         protected User $user,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the job.
      *
-     * @return void
      *
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
@@ -58,8 +55,6 @@ class DeleteAllJob implements ShouldQueue
     }
 
     /**
-     * @param  SimpleXMLElement  $item
-     *
      * @throws RequestException
      */
     private function delete(SimpleXMLElement $item)
@@ -71,7 +66,7 @@ class DeleteAllJob implements ShouldQueue
         }
 
         $date = Carbon::parse((string) $item->children('dc', true)->date, config('app.timezone'))
-            ->addDays(config('hatena.delete_days')); //○日後に削除
+            ->addDays(config('hatena.delete_days')); // ○日後に削除
 
         if ($date->greaterThan(now())) {
             return;

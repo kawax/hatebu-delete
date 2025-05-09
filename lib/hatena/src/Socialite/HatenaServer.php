@@ -51,7 +51,7 @@ class HatenaServer extends Server
      */
     public function userDetails($data, TokenCredentials $tokenCredentials)
     {
-        $user = new User();
+        $user = new User;
 
         $user->uid = $data['url_name'];
         $user->nickname = $data['display_name'];
@@ -88,9 +88,7 @@ class HatenaServer extends Server
     /**
      * {@inheritdoc}
      */
-    public function userEmail($data, TokenCredentials $tokenCredentials)
-    {
-    }
+    public function userEmail($data, TokenCredentials $tokenCredentials) {}
 
     /**
      * {@inheritdoc}

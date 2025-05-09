@@ -12,9 +12,6 @@ class Feed
      * 非公開だと取得できないし、キャッシュされてるので更新が遅い。
      *
      * @see http://developer.hatena.ne.jp/ja/documents/bookmark/misc/feed
-     *
-     * @param  User  $user
-     * @return SimpleXMLElement
      */
     public function get(User $user): SimpleXMLElement
     {
