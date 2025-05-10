@@ -1,5 +1,5 @@
 <div class="my-4">
-    <flux:button wire:click="delete()" wire:loading.attr="disabled" size="sm">
+    <flux:button wire:click="delete()" size="sm">
         最近の20件を削除
     </flux:button>
 
