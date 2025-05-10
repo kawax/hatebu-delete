@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Revolution\Hatena\Bookmark\Bookmark;
 use Illuminate\Support\Str;
+use Revolution\Hatena\Bookmark\Bookmark;
 
 class User extends Authenticatable
 {
@@ -49,7 +49,6 @@ class User extends Authenticatable
 
         return app(Bookmark::class)->withHatena($config);
     }
-
 
     /**
      * Get the user's initials
