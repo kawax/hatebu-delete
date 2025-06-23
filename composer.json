@@ -66,6 +66,8 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
+        "test": "php artisan test",
+        "lint": "vendor/bin/pint",
         "ide-helper:meta": "sail artisan ide-helper:meta",
         "ide-helper:generate": "sail artisan ide-helper:generate",
         "ide-helper:models": "sail artisan ide-helper:models -N",
