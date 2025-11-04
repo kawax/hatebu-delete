@@ -1,6 +1,6 @@
 {
     "agents": [
-        "copilot-cli"
+        "copilot"
     ],
     "editors": [
         "copilot-cli"
