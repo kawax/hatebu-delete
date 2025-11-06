@@ -5,5 +5,7 @@
     "editors": [
         "copilot-cli"
     ],
-    "guidelines": []
+    "guidelines": [
+        "revolution/laravel-boost-copilot-cli"
+    ]
 }
