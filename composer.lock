@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2"
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
-                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
+                "url": "https://api.github.com/repos/brick/math/zipball/f05858549e5f9d7bb45875a75583240a38a281d0",
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.0"
+                "source": "https://github.com/brick/math/tree/0.14.1"
             },
             "funding": [
                 {
@@ -64,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-29T12:40:03+00:00"
+            "time": "2025-11-24T14:40:29+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2318,16 +2318,16 @@
         },
         {
             "name": "livewire/flux",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/flux.git",
-                "reference": "17acef4be6cb0f9551e399b546cd5b903ae90c6a"
+                "reference": "bf38c5002161034adaa4ec0c6cd1ca0ec61a2618"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/flux/zipball/17acef4be6cb0f9551e399b546cd5b903ae90c6a",
-                "reference": "17acef4be6cb0f9551e399b546cd5b903ae90c6a",
+                "url": "https://api.github.com/repos/livewire/flux/zipball/bf38c5002161034adaa4ec0c6cd1ca0ec61a2618",
+                "reference": "bf38c5002161034adaa4ec0c6cd1ca0ec61a2618",
                 "shasum": ""
             },
             "require": {
@@ -2378,9 +2378,9 @@
             ],
             "support": {
                 "issues": "https://github.com/livewire/flux/issues",
-                "source": "https://github.com/livewire/flux/tree/v2.7.0"
+                "source": "https://github.com/livewire/flux/tree/v2.7.1"
             },
-            "time": "2025-11-24T02:21:55+00:00"
+            "time": "2025-11-24T12:49:39+00:00"
         },
         {
             "name": "livewire/livewire",
