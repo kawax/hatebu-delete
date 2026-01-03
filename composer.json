@@ -13,6 +13,7 @@
         "ext-json": "*",
         "guzzlehttp/oauth-subscriber": "^0.8",
         "laravel/framework": "^12.0",
+        "laravel/octane": "^2.13",
         "laravel/socialite": "^5.12",
         "laravel/tinker": "^2.0",
         "livewire/flux": "^2.1",
