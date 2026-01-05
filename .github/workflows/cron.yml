@@ -35,4 +35,4 @@ jobs:
           DB_CONNECTION: 'mysql'
           DB_URL: ${{ secrets.DB_URL }}
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
-          QUEUE_CONNECTION: 'sync'
+          QUEUE_CONNECTION: 'database'
