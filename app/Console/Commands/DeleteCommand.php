@@ -30,8 +30,6 @@ class DeleteCommand extends Command
         $users = User::whereIn('name', config('hatena.users'))->get();
 
         foreach ($users as $user) {
-            context(['user' => $user->name]);
-            info(class_basename(self::class));
             DeleteAllJob::dispatch($user);
         }
 
