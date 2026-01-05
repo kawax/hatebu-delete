@@ -35,4 +35,3 @@ jobs:
           DB_CONNECTION: 'mysql'
           DB_URL: ${{ secrets.DB_URL }}
           USERS: ${{ secrets.USERS }}
-          QUEUE_CONNECTION: 'sync'
