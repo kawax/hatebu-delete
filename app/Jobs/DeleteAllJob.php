@@ -65,8 +65,6 @@ class DeleteAllJob implements ShouldQueue
             return;
         }
 
-        info('Deleting: '.$url);
-
         $date = Carbon::parse((string) $item->children('dc', true)->date, config('app.timezone'))
             ->addDays(config('hatena.delete_days')); // ○日後に削除
 

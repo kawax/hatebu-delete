@@ -36,8 +36,6 @@ class DeleteOneJob implements ShouldQueue
      */
     public function handle(): void
     {
-        info('Deleting: '.$this->url);
-
         $res = $this->user->hatenaBookmark()->delete($this->url)->throw();
 
         if ($res->successful()) {
