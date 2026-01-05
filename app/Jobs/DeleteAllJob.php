@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Jobs;
 
 use App\Bookmark\Feed;
@@ -57,7 +59,7 @@ class DeleteAllJob implements ShouldQueue
     /**
      * @throws RequestException
      */
-    private function delete(SimpleXMLElement $item)
+    private function delete(SimpleXMLElement $item): void
     {
         $url = (string) $item->link;
 

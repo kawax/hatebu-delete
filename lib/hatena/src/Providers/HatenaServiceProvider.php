@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Revolution\Hatena\Providers;
 
 use GuzzleHttp\Subscriber\Oauth\Oauth1;

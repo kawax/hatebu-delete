@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Revolution\Hatena\Bookmark;
 
 use Illuminate\Http\Client\Response;
