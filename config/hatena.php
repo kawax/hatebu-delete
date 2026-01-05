@@ -8,5 +8,5 @@ return [
     'delete_days' => (int) env('DELETE_DAYS', 3),
     'analytics' => env('GOOGLE_ANALYTICS'),
 
-    'users' => explode(',', env('USERS')),
+    'users' => explode(',', env('USERS', '')),
 ];
