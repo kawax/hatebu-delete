@@ -16,7 +16,7 @@ Route::middleware('guest')
     });
 
 Route::middleware('auth')->group(function () {
-    Route::livewire('home', 'home')->name('home');
+    Route::livewire('home', 'pages::home')->name('home');
 
     Route::post('logout', LogoutController::class)->name('logout');
 });
