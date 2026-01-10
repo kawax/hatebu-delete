@@ -1,3 +1,19 @@
+<?php
+
+use App\Jobs\DeleteAllJob;
+use Livewire\Component;
+
+new class extends Component
+{
+    public function delete(): void
+    {
+        DeleteAllJob::dispatchSync(request()->user());
+
+        $this->dispatch('deleted');
+    }
+};
+?>
+
 <div class="my-4">
     <flux:button wire:click="delete()" size="sm">
         最近の20件を削除

@@ -1,3 +1,27 @@
+<?php
+
+use App\Jobs\DeleteOneJob;
+use Livewire\Component;
+
+new class extends Component
+{
+    public string $link;
+
+    public string $title;
+
+    public string $description;
+
+    public string $date;
+
+    public function delete(): void
+    {
+        DeleteOneJob::dispatchSync(request()->user(), $this->link);
+
+        $this->dispatch('deleted');
+    }
+};
+?>
+
 <li class="py-3 border-b border-zinc-200">
     <time>{{ $date }}</time>
 

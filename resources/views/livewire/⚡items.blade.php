@@ -1,3 +1,31 @@
+<?php
+
+use App\Bookmark\Feed;
+use Livewire\Attributes\On;
+use Livewire\Component;
+
+new class extends Component
+{
+    protected SimpleXMLElement $feed;
+
+    public function mount(): void
+    {
+        $this->feed();
+    }
+
+    #[On('deleted')]
+    public function feed(): void
+    {
+        $this->feed = app(Feed::class)->get(request()->user());
+    }
+
+    public function getFeedProperty(): SimpleXMLElement
+    {
+        return $this->feed;
+    }
+};
+?>
+
 <x-card>
     <x-slot:header>
         <flux:heading size="xl">

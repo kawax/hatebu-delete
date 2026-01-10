@@ -1,3 +1,34 @@
+<?php
+
+use Illuminate\Database\Eloquent\Collection;
+use Livewire\Attributes\On;
+use Livewire\Component;
+
+new class extends Component
+{
+    public Collection $notifications;
+
+    public function mount(): void
+    {
+        $this->notifications();
+    }
+
+    #[On('deleted')]
+    public function notifications(): void
+    {
+        request()->user()
+            ->readNotifications()
+            ->where('created_at', '<', now()->subDays(config('hatena.delete_days')))
+            ->delete();
+
+        $notifications = request()->user()->notifications;
+        $notifications->markAsRead();
+
+        $this->notifications = $notifications->take(20);
+    }
+};
+?>
+
 <x-card>
     <x-slot:header>
         <flux:heading size="xl">
