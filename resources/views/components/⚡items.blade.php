@@ -39,7 +39,7 @@ new class extends Component
                             :title="(string)$item->title"
                             :description="(string)$item->description"
                             :date="Date::parse($item->children('dc', true)->date)->addHours(9)->toDateTimeString()"
-                            :key="(string)$item->link">
+                            :key="(string)$item->link"/>
         @endforeach
     </ul>
 </x-card>
