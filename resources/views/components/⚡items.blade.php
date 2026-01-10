@@ -1,10 +1,13 @@
 <?php
 
 use App\Bookmark\Feed;
+use Livewire\Attributes\Defer;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
-new class extends Component
+new
+#[Defer]
+class extends Component
 {
     protected SimpleXMLElement $feed;
 

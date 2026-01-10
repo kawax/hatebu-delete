@@ -1,10 +1,13 @@
 <?php
 
 use Illuminate\Database\Eloquent\Collection;
+use Livewire\Attributes\Defer;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
-new class extends Component
+new
+#[Defer]
+class extends Component
 {
     public Collection $notifications;
 

@@ -1,9 +1,12 @@
 <?php
 
 use App\Jobs\DeleteAllJob;
+use Livewire\Attributes\Defer;
 use Livewire\Component;
 
-new class extends Component
+new
+#[Defer]
+class extends Component
 {
     public function delete(): void
     {
