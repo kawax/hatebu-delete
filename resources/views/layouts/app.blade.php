@@ -84,6 +84,7 @@
     {{ $slot }}
 </flux:main>
 
+@livewireStyles
 @fluxScripts
 </body>
 </html>
