@@ -77,7 +77,9 @@
             <flux:spacer />
         </flux:sidebar>
 
-        {{ $slot }}
+        <flux:main>
+            {{ $slot }}
+        </flux:main>
 
         @fluxScripts
     </body>
