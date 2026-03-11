@@ -1,8 +1,10 @@
 <?php
 
 declare(strict_types=1);
+use App\Providers\AppServiceProvider;
+use Revolution\Hatena\Providers\HatenaServiceProvider;
 
 return [
-    App\Providers\AppServiceProvider::class,
-    Revolution\Hatena\Providers\HatenaServiceProvider::class,
+    AppServiceProvider::class,
+    HatenaServiceProvider::class,
 ];

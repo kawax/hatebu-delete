@@ -29,7 +29,7 @@ class LoginController extends Controller
         $user = Socialite::driver('hatena')->user();
 
         /**
-         * @var \App\Models\User $loginUser
+         * @var User $loginUser
          */
         $loginUser = User::updateOrCreate([
             'name' => $user->id,
