@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37a3eff0b9655a4aca5850d50583ae24",
+    "content-hash": "71102e809d095acfc063e7efff12ad60",
     "packages": [
         {
             "name": "brick/math",
@@ -8409,69 +8409,6 @@
                 }
             ],
             "time": "2026-03-17T22:37:41+00:00"
-        },
-        {
-            "name": "revolution/sail-db-backup",
-            "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/invokable/sail-db-backup.git",
-                "reference": "4469dba6edc014373edf504902e599315a23c03c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/invokable/sail-db-backup/zipball/4469dba6edc014373edf504902e599315a23c03c",
-                "reference": "4469dba6edc014373edf504902e599315a23c03c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^12.0||^13.0",
-                "php": "^8.3"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.22",
-                "orchestra/testbench": "^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Revolution\\Sail\\Backup\\SailBackupServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Revolution\\Sail\\Backup\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "kawax",
-                    "email": "kawaxbiz@gmail.com"
-                }
-            ],
-            "description": "Backup Sail's Database",
-            "keywords": [
-                "backup",
-                "database",
-                "laravel",
-                "sail"
-            ],
-            "support": {
-                "source": "https://github.com/invokable/sail-db-backup/tree/3.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/invokable",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-02-22T02:16:46+00:00"
         },
         {
             "name": "sebastian/cli-parser",
