@@ -8223,16 +8223,16 @@
         },
         {
             "name": "revolution/laravel-boost-copilot-cli",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/invokable/laravel-boost-copilot-cli.git",
-                "reference": "e7aca197f523b112cb7a091317a375c48fceb979"
+                "reference": "0f95e19212a0007403d0e8c3095764249e4f9f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/invokable/laravel-boost-copilot-cli/zipball/e7aca197f523b112cb7a091317a375c48fceb979",
-                "reference": "e7aca197f523b112cb7a091317a375c48fceb979",
+                "url": "https://api.github.com/repos/invokable/laravel-boost-copilot-cli/zipball/0f95e19212a0007403d0e8c3095764249e4f9f75",
+                "reference": "0f95e19212a0007403d0e8c3095764249e4f9f75",
                 "shasum": ""
             },
             "require": {
@@ -8280,7 +8280,7 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/invokable/laravel-boost-copilot-cli/tree/2.2.0"
+                "source": "https://github.com/invokable/laravel-boost-copilot-cli/tree/2.2.1"
             },
             "funding": [
                 {
@@ -8288,7 +8288,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-20T13:14:27+00:00"
+            "time": "2026-03-29T11:36:11+00:00"
         },
         {
             "name": "sebastian/cli-parser",
