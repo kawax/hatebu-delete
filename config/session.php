@@ -232,6 +232,6 @@ return [
     |
     */
 
-    'serialization' => 'json',
+    'serialization' => 'php',
 
 ];
