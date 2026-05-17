@@ -833,16 +833,16 @@
         },
         {
             "name": "guzzlehttp/oauth-subscriber",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/oauth-subscriber.git",
-                "reference": "92b619b03bd21396e51c62e6bce83467d2ce8f53"
+                "reference": "f8bb30a752063523d17e21caa2dd6483962f7995"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/oauth-subscriber/zipball/92b619b03bd21396e51c62e6bce83467d2ce8f53",
-                "reference": "92b619b03bd21396e51c62e6bce83467d2ce8f53",
+                "url": "https://api.github.com/repos/guzzle/oauth-subscriber/zipball/f8bb30a752063523d17e21caa2dd6483962f7995",
+                "reference": "f8bb30a752063523d17e21caa2dd6483962f7995",
                 "shasum": ""
             },
             "require": {
@@ -902,7 +902,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/oauth-subscriber/issues",
-                "source": "https://github.com/guzzle/oauth-subscriber/tree/0.8.1"
+                "source": "https://github.com/guzzle/oauth-subscriber/tree/0.8.2"
             },
             "funding": [
                 {
@@ -918,7 +918,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-06T19:15:59+00:00"
+            "time": "2026-05-16T22:55:01+00:00"
         },
         {
             "name": "guzzlehttp/promises",
