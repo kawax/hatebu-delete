@@ -2,8 +2,8 @@ name: cron
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '10 * * * *' #UTC
+  #schedule:
+  #  - cron: '10 * * * *' #UTC
 
 jobs:
   cron:
