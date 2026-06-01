@@ -11,6 +11,7 @@
         "php": "^8.4",
         "ext-SimpleXML": "*",
         "ext-json": "*",
+        "aws/aws-sdk-php": "^3.383",
         "guzzlehttp/oauth-subscriber": "^0.8",
         "laravel/framework": "^13.0",
         "laravel/octane": "^2.13",
