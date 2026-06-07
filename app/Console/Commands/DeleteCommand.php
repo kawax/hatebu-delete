@@ -6,24 +6,12 @@ namespace App\Console\Commands;
 
 use App\Jobs\DeleteAllJob;
 use App\Models\User;
+use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 
+#[Signature('hatena:delete')]
 class DeleteCommand extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'hatena:delete';
-
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Command description';
-
     /**
      * Execute the console command.
      */
