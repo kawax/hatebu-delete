@@ -12,6 +12,7 @@
     "sail": false,
     "skills": [
         "laravel-best-practices",
+        "octane-development",
         "socialite-development",
         "fluxui-development",
         "livewire-development",
