@@ -38,7 +38,7 @@ class LoginController extends Controller
             'token_secret' => $user->tokenSecret,
         ]);
 
-        auth()->login($loginUser, false);
+        auth()->login($loginUser, true);
 
         return to_route('home');
     }
